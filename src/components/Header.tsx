@@ -17,7 +17,7 @@ const Header = () => {
        <nav className='hidden lg:block'>
           <ul className='flex gap-5 text-lg font-medium'>
             {navLinks.map(({title, href}) => <li key={title}>
-              <Link href={href} className='transition-all duration-300 hover:border-b-2 focus:border-b-2 py-3'>{title}</Link>
+              <Link href={href} className='transition-all duration-300npm hover:border-b-2 hover:border-red focus:border-red focus:border-b-2 py-3'>{title}</Link>
             </li>)}
           </ul>
         </nav>

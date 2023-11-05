@@ -55,12 +55,12 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
           ))}
         </ul>
         <div className="flex justify-center items-center gap-4 mx-auto border-t border-gray-400 pt-6 px-6 md:px-8 md:py-7" >
-            <a href='https://www.instagram.com/beautiful.nails.if'  rel="noopener noreferrer">
+            <a href='https://www.instagram.com/beautiful.nails.if'  rel="noopener noreferrer" target='_blank'>
               <InstagramIcon />
             </a>
-            <a href='https://facebook.com/beautifulnails.pasichna.if'  rel="noopener noreferrer"><FasebookIcon /></a>
-            <a href=""  rel="noopener noreferrer" ><ViberIcon /></a>
-            <a href=""  rel="noopener noreferrer" ><TelegramIcon /></a>
+            <a href='https://facebook.com/beautifulnails.pasichna.if'  rel="noopener noreferrer" target='_blank'><FasebookIcon /></a>
+            <a href=""  rel="noopener noreferrer" target='_blank'><ViberIcon /></a>
+            <a href=""  rel="noopener noreferrer" target='_blank'><TelegramIcon /></a>
             </div>
     
       </div>
