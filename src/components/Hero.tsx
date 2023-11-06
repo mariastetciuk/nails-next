@@ -1,8 +1,9 @@
 import { Bitter } from "next/font/google";
 import LocationIcon from "./icons/LocationIcon";
-import FixedBtn from "./Sociale";
+import FixedBtn from "./btnComponents.tsx/Sociale";
 import Link from "next/link";
 import { Great_Vibes, Zilla_Slab, Oranienbaum, Pompiere } from 'next/font/google';
+import BtnOrderService from "./btnComponents.tsx/BtnOrderServise";
 
 const vibes = Great_Vibes({subsets: ['latin'], weight: ['400']})
 const zilla = Zilla_Slab({subsets: ['latin'], weight: ['700']})
@@ -31,16 +32,11 @@ const Hero = () => {
             <LocationIcon />
             <p className="lg:pr-1 md:py-1 text-[14px] lg:text-base">
               м.Івано-Франківськ,{" "}
-              <span className="block lg:inline ">вул.Пасічна,2а(0 пoверх)</span>
+              <span className="block lg:inline ">вул.Пасічна, 2а (0 пoверх)</span>
               <span className="block text-[13px] lg:text-center">(позаду автобусної зупинки)</span>
             </p>
           </a>
-          <button
-            type="button"
-            className={`${zilla.className} absolute right-0  -top-[120px] flex items-center justify-center h-[100px] w-[100px] rounded-full bg-white text-base font-medium  text-red transition-all duration-300 hover:bg-red focus:bg-red hover:text-white focus:text-white md:h-[120px] md:w-[120px]  md:text-xl lg:-top-[200px] lg:w-[140px] lg:h-[140px]`}
-          >
-            Записатися
-          </button>
+         <BtnOrderService style={`${zilla.className} absolute right-0  -top-[120px] flex items-center justify-center h-[100px] w-[100px] rounded-full bg-white text-base font-medium  text-red transition-all duration-300 hover:bg-red focus:bg-red hover:text-white focus:text-white md:h-[120px] md:w-[120px]  md:text-xl lg:-top-[200px] lg:w-[140px] lg:h-[140px]`} />
         </div>
       </div>
       <FixedBtn />

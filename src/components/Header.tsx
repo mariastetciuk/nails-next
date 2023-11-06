@@ -1,7 +1,8 @@
 import { navLinks } from '@/data/navList';
 import Link from 'next/link';
 import { Dancing_Script, Zilla_Slab } from 'next/font/google';
-import BtnOpenMenu from './BtnOpenMenu';
+import BtnOpenMenu from './btnComponents.tsx/BtnOpenMenu';
+import BtnOrderService from './btnComponents.tsx/BtnOrderServise';
 
 const dancing = Dancing_Script({subsets: ['latin'], weight: ['700']})
 const zilla = Zilla_Slab({subsets: ['latin'], weight: ['500']})
@@ -23,7 +24,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className='flex items-center gap-7'>
-          <button className='hidden md:block md:px-5 md:py-2 md:text-white md:text-lg md:border-[2px] md:font-medium md:border-white transition-all duration-300 hover:bg-white hover:text-red font-medium focus:bg-white focus:text-red'>Записатися</button>
+          <BtnOrderService style="hidden md:block md:px-5 md:py-2 md:text-white md:text-lg md:border-[2px] md:font-medium md:border-white transition-all duration-300 hover:bg-white hover:text-red font-medium focus:bg-white focus:text-red"/>
         <BtnOpenMenu /></div> 
       
         </div>

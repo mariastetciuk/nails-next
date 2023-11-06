@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
-import OpenBurgerMenuIcon from "./icons/OpenBurgerMenuIcon"
-import BurgerMenu from "./BurgerMenu";
+import OpenBurgerMenuIcon from "../icons/OpenBurgerMenuIcon"
+import BurgerMenu from "../BurgerMenu";
 
 
 const BtnOpenMenu = () => {

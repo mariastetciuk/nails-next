@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import CloseIcon from "./icons/CloseIcon";
-import PhoneIcon from "./icons/PhoneIcon";
-import InstagramIcon from "./icons/InstagramIcon";
-import FasebookIcon from "./icons/FasebbokIcon";
-import TelegramIcon from "./icons/TelegramIcon";
-import ViberIcon from "./icons/ViberIcon";
+import CloseIcon from "../icons/CloseIcon";
+import PhoneIcon from "../icons/PhoneIcon";
+import InstagramIcon from "../icons/InstagramIcon";
+import FasebookIcon from "../icons/FasebbokIcon";
+import TelegramIcon from "../icons/TelegramIcon";
+import ViberIcon from "../icons/ViberIcon";
 import Link from "next/link";
 
 const FixedBtn = () => {
@@ -37,7 +37,7 @@ const FixedBtn = () => {
   }, [currentImageIndex, images.length]);
 
   return (
-    <div className="fixed left-0 right-0 bottom-7 z-10">
+    <div className="fixed left-0 right-0 bottom-7 z-1">
       <div className="flex items-center mx-auto justify-between px-5 w-[320px] md:w-[768px] lg:w-[1280px] lg:px-20">
         <Link
         href={'tel: +380989505917'}

@@ -1,5 +1,4 @@
 "use client";
-import BtnOpenMenu from "./BtnOpenMenu";
 import CloseIcon from "./icons/CloseIcon";
 import { MouseEvent, useEffect } from "react";
 import Link from "next/link";
@@ -9,15 +8,11 @@ import FasebookIcon from "./icons/FasebbokIcon";
 import ViberIcon from "./icons/ViberIcon";
 import TelegramIcon from "./icons/TelegramIcon";
 import {  Zilla_Slab } from 'next/font/google';
+import { CloseModal } from "@/type/type";
 
 
 const zilla = Zilla_Slab({subsets: ['latin'], weight: ['700']})
 
-
-
-type CloseModal = {
-  togleModal: () => void;
-};
 
 const BurgerMenu = ({ togleModal }: CloseModal) => {
   const handleOverlayClick = (event: MouseEvent<HTMLDivElement>) => {
