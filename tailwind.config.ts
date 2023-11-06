@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        red: '#bb0a1e',
+        red: '#4d1414',
         lightred: '#e0d3d3',
         accent: '#FEE41F',
         lemon: '#FFF5A5',
@@ -26,9 +26,10 @@ const config: Config = {
       }
     },
     screens: {
-      sm: '320px',
+      sm: '400px',
       md: '768px',
-      lg: '1280px'
+      lg: '1280px',
+      bg: '320px'
     }
     },
   plugins: [],

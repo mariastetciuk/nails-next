@@ -9,13 +9,19 @@
 }
 
 .bgImage {
-  background-image: linear-gradient(rgba(39, 40, 45, 0.5), rgba(39, 40, 45, 0.5)), url('/hero1.jpg');
+  background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero4.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero5.jpg');
+  }
+
+
 }
 
 .ffr {
-  color: #e0d3d3;
+  color: #4d1414;
 }
 

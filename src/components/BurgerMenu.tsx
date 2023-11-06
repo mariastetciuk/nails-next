@@ -8,6 +8,12 @@ import InstagramIcon from "./icons/InstagramIcon";
 import FasebookIcon from "./icons/FasebbokIcon";
 import ViberIcon from "./icons/ViberIcon";
 import TelegramIcon from "./icons/TelegramIcon";
+import {  Zilla_Slab } from 'next/font/google';
+
+
+const zilla = Zilla_Slab({subsets: ['latin'], weight: ['700']})
+
+
 
 type CloseModal = {
   togleModal: () => void;
@@ -36,7 +42,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
 
   return (
     <div
-      className="fixed left-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-40"
+      className={`${zilla.className} fixed left-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-40`}
       onClick={handleOverlayClick}
     >
       <div className="absolute right-0 top-0 w-[265px]  py-6 bg-white md:w-[400px]">
@@ -59,8 +65,8 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
               <InstagramIcon />
             </a>
             <a href='https://facebook.com/beautifulnails.pasichna.if'  rel="noopener noreferrer" target='_blank'><FasebookIcon /></a>
-            <a href=""  rel="noopener noreferrer" target='_blank'><ViberIcon /></a>
-            <a href=""  rel="noopener noreferrer" target='_blank'><TelegramIcon /></a>
+            <a href="viber://add?number=380989505917"  rel="noopener noreferrer" target='_blank'><ViberIcon /></a>
+            <a href="https://t.me/beautifulnails_ukraine"  rel="noopener noreferrer" target='_blank'><TelegramIcon /></a>
             </div>
     
       </div>
