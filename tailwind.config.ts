@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         red: '#4d1414',
         lightred: '#e0d3d3',
-        accent: '#FEE41F',
+        redlight: '#ee0808',
         lemon: '#FFF5A5',
         darkgray: '#565656',
         graphite: '#4D4D4D',
