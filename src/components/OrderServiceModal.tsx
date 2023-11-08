@@ -52,7 +52,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
           <CloseIcon />
         </button>
         <h2 className="text-red text-xl font-bold text-center mb-5">
-          Запишіться у студію
+          Залиште свої дані і ми Вам перетелефонуємо
         </h2>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -90,9 +90,6 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
             <p className=" text-redlight text-[12px] w-[237px]">{errors.phone.message}</p>
           )}
           </div>
-          <p className="text-red text-center mb-5 font-medium">
-            Приймаємо клієнтів щодня{" "}
-          </p>
           <button
             className="text-white border-2 bg-red border-transparent font-medium px-5 py-2 w-[100%] rounded-3xl hover:text-red hover:bg-white hover:border-red"
             type="submit"

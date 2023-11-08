@@ -59,12 +59,14 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
             <a href='https://www.instagram.com/beautiful.nails.if'  rel="noopener noreferrer" target='_blank'>
               <InstagramIcon />
             </a>
-            <a href='https://facebook.com/beautifulnails.pasichna.if'  rel="noopener noreferrer" target='_blank'><FasebookIcon /></a>
+            <a href='https://www.facebook.com/beautifulnails.ukraine'  rel="noopener noreferrer" target='_blank'><FasebookIcon /></a>
             <a href="viber://add?number=380989505917"  rel="noopener noreferrer" target='_blank'><ViberIcon /></a>
             <a href="https://t.me/beautifulnails_ukraine"  rel="noopener noreferrer" target='_blank'><TelegramIcon /></a>
             </div>
+            <Link href={'tel: +380989505917'} className="block text-center text-red mb-[25px] md:text-xl lg:mb-[240px] lg:text-2xl">+38(098) 9505917</Link>
     
       </div>
+      
     </div>
   );
 };

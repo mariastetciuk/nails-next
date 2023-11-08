@@ -22,6 +22,28 @@
 }
 
 .ffr {
-  color: #4d1414;
+  color: #794f4f;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px ){
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 100px;
+  padding-right: 100px;
+  }
+
+
 }
 

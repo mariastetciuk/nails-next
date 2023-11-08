@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        red: '#4d1414',
+        red: '#660000',
         lightred: '#e0d3d3',
         redlight: '#ee0808',
         lemon: '#FFF5A5',

@@ -73,7 +73,7 @@ const FixedBtn = () => {
                 <InstagramIcon />
               </Link>
               <Link
-                href="https://facebook.com/beautifulnails.pasichna.if"
+                href="https://www.facebook.com/beautifulnails.ukraine"
                 rel="noopener noreferrer"
                 target='_blank'
                
