@@ -3,20 +3,21 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import CloseIcon from "../icons/CloseIcon";
 import PhoneIcon from "../icons/PhoneIcon";
-import InstagramIcon from "../icons/InstagramIcon";
-import FasebookIcon from "../icons/FasebbokIcon";
-import TelegramIcon from "../icons/TelegramIcon";
-import ViberIcon from "../icons/ViberIcon";
 import Link from "next/link";
+import { socialeList } from "@/data/navList";
+import BtnOrderService from "./BtnOrderServise";
 
 const FixedBtn = () => {
   const [isShowPopUp, setisShowPopUp] = useState(false);
+  const [isShowModal, setisShowModal] = useState(false);
+
+  const togleModal = () => setisShowModal(prev => !prev);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    "/icon/icon-facebook.svg",
-    "/icon/icon-instagram.svg",
-    "/icon/icon-viber.svg",
-    "/icon/icon-telegram.svg",
+    '/icon/facebook.svg',
+    "/icon/instagram.svg",
+    "/icon/telegram.svg",
+    "/icon/viber.svg"
   ];
 
   const togglePopUp = () => setisShowPopUp((prev) => !prev);
@@ -37,19 +38,24 @@ const FixedBtn = () => {
   }, [currentImageIndex, images.length]);
 
   return (
-    <div className="fixed left-0 right-0 bottom-7 z-1">
-      <div className="flex items-center mx-auto justify-between px-5 w-[320px] md:w-[768px] lg:w-[1280px] lg:px-20">
+    <div className="fixed left-0 right-0 bottom-7 z-[9999]">
+      <div className="flex items-center mx-auto justify-between px-5 sm:w-[480px] md:w-[768px] lg:w-[1280px] lg:px-20">
         <Link
         href={'tel: +380989505917'}
-          className=" flex justify-center text-red items-center w-[70px] h-[70px] rounded-full border-8 border-lightred bg-white transition-all duration-300 md:w-[80px] md:h-[80px]"
+          className=" flex justify-center text-red items-center w-[50px] h-[50px] rounded-full border-4 border-red bg-white transition-all duration-300 md:w-[60px] md:h-[60px] hover:bg-red hover:text-white focus:bg-red focus:text-white"
         >
-          <PhoneIcon />
+           <svg className="w-[38px] h-[38px] fill-current text-current">
+           <use href='/sprite.svg#icon-phone'></use>
+               </svg>
         </Link>
+<BtnOrderService style="inline-block text-center bg-white text-red py-1 text-lg rounded-3xl font-semibold px-3 border-4 border-red md:text-xl md:py-2 md:px-4 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white" />
+      
+
         <div className="relative ">
           <button
             type="button"
             onClick={togglePopUp}
-            className="  flex justify-center items-center w-[50px] h-[50px] rounded-full border-4 border-lightred bg-white transition-all duration-300 md:w-[60px] md:h-[60px]"
+            className="  flex justify-center text-red items-center w-[50px] h-[50px] rounded-full border-4 border-red  bg-white md:w-[60px] md:h-[60px] transition-all duration-300"
           >
             {isShowPopUp ? (
               <CloseIcon />
@@ -59,39 +65,24 @@ const FixedBtn = () => {
                 alt={`Image ${currentImageIndex + 1}`}
                 width={40}
                 height={40}
+                color="red"
               />
             )}
           </button>
           {isShowPopUp && (
-            <div className="absolute -top-[200px] flex flex-wrap justify-center items-center right-0 w-[50px] md:w-[60px] ">
-              <Link
-                href="https://www.instagram.com/beautiful.nails.if"
-                rel="noopener noreferrer"
-                target='_blank'
-                
-              >
-                <InstagramIcon />
-              </Link>
-              <Link
-                href="https://www.facebook.com/beautifulnails.ukraine"
-                rel="noopener noreferrer"
-                target='_blank'
-               
-              >
-                <FasebookIcon />
-              </Link>
-              <Link href="" rel="noopener noreferrer" target='_blank'
-              >
-                <ViberIcon />
-              </Link>
-              <Link href="" rel="noopener noreferrer" target='_blank'
-             >
-                <TelegramIcon />
-              </Link>
-            </div>
+            <ul className="absolute -top-[245px] flex gap-2 flex-wrap justify-center items-center right-0 w-[50px] md:w-[60px]">
+            {socialeList.map(({link, href}) => <li key={href}>
+              <Link href={link}  rel="noopener noreferrer" target='_blank' className="block text-red rounded-full p-2 bg-white transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white">
+               <svg className="w-[38px] h-[38px] fill-current text-current">
+           <use href={href}></use>
+               </svg>
+             </Link>
+            </li>  
           )}
-        </div>
-      </div>
+          </ul>
+          )}
+          </div>
+          </div>
     </div>
   );
 };

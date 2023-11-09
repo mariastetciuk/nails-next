@@ -1,12 +1,7 @@
 "use client";
-import CloseIcon from "./icons/CloseIcon";
 import { MouseEvent, useEffect } from "react";
 import Link from "next/link";
-import { navLinks, sociale } from "@/data/navList";
-import InstagramIcon from "./icons/InstagramIcon";
-import FasebookIcon from "./icons/FasebbokIcon";
-import ViberIcon from "./icons/ViberIcon";
-import TelegramIcon from "./icons/TelegramIcon";
+import { navLinks, socialeList } from "@/data/navList";
 import {  Zilla_Slab } from 'next/font/google';
 import { CloseModal } from "@/type/type";
 
@@ -37,33 +32,39 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
 
   return (
     <div
-      className={`${zilla.className} fixed left-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-40`}
+      className={` fixed left-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-40`}
       onClick={handleOverlayClick}
     >
-      <div className="absolute right-0 top-0 w-[265px]  py-6 bg-white md:w-[400px]">
+      <div className="absolute right-0 top-0 w-[265px]  py-6 bg-white md:w-[350px]">
      <button
           type="button"
           onClick={togleModal}
-          className="absolute right-3 top-3 text-black "
+          className="absolute right-3 top-3 text-red "
         >
-          <CloseIcon />
+          <svg className="w-[32px] h-[32px] fill-current text-current">
+         <use href='/sprite.svg#icon-close'></use>
+             </svg>
         </button>
-        <ul className="text-red font-semibold text-lg text-center mb-6 px-6 md:px-8 md:text-2xl md:mb-7">
+        <div className="flex justify-around items-center border-b border-red">
+        <ul className="flex flex-col gap-5">
+          {socialeList.map(({link, href}) => <li key={href}>
+            <Link href={link}  rel="noopener noreferrer" target='_blank' className="block text-red rounded-full p-2 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white">
+             <svg className="w-[38px] h-[38px] fill-current text-current">
+         <use href={href}></use>
+             </svg>
+           </Link>
+          </li>)}
+        </ul>
+        <ul className={`${zilla.className} text-red font-semibold text-lg px-6 md:px-8 md:text-2xl`}>
           {navLinks.map(({ title, href }) => (
             <li key={title} className="my-1 py-2 md:my-3">
               <Link href={href} rel="noopener noreferrer" className="transition-all duration-300 hover:border-b-2 hover:border-red focus:border-b-2 focus:border-red">{title}</Link>
             </li>
           ))}
         </ul>
-        <div className="flex justify-center items-center gap-4 mx-auto border-t border-gray-400 pt-6 px-6 md:px-8 md:py-7" >
-            <a href='https://www.instagram.com/beautiful.nails.if'  rel="noopener noreferrer" target='_blank'>
-              <InstagramIcon />
-            </a>
-            <a href='https://www.facebook.com/beautifulnails.ukraine'  rel="noopener noreferrer" target='_blank'><FasebookIcon /></a>
-            <a href="viber://add?number=380989505917"  rel="noopener noreferrer" target='_blank'><ViberIcon /></a>
-            <a href="https://t.me/beautifulnails_ukraine"  rel="noopener noreferrer" target='_blank'><TelegramIcon /></a>
-            </div>
-            <Link href={'tel: +380989505917'} className="block text-center text-red mb-[25px] md:text-xl lg:mb-[240px] lg:text-2xl">+38(098) 9505917</Link>
+       
+        </div >
+            <Link href={'tel: +380989505917'} className="block text-center text-2xl text-red py-3 font-semibold md:text-3xl md:py-5">+38(098) 9505917</Link>
     
       </div>
       

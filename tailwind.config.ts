@@ -26,10 +26,10 @@ const config: Config = {
       }
     },
     screens: {
-      sm: '400px',
+      sm: '480px',
       md: '768px',
-      lg: '1280px',
-      bg: '320px'
+      lg: '1100px',
+      bg: '1440px'
     }
     },
   plugins: [],

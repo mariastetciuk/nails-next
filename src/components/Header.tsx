@@ -33,7 +33,7 @@ const Header = () => {
       <header className={`${
         isScrolled ? ' bg-black bg-opacity-60' : 'bg-transparent'
       } fixed text-white left-0 right-0 top-0 z-10 md:py-[15px] lg:py-5`}>
-        <div className='container px-5 py-1 bg flex items-center justify-between lg:px-20'>
+        <div className='container py-1 bg flex items-center justify-between '>
         <Link href={'/'} className={`${vibes.className} text-2xl font-medium md:text-4xl`}>
           Beautiful <span className='block pl-4'>Nails</span> 
         </Link>

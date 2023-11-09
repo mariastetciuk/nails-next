@@ -21,8 +21,8 @@ const Hero = () => {
       <div className="container h-[400px]   md:pt-[95px] md:h-[800px] ">
    
        
-      <h2 className={`${vibes.className} text-5xl  text-center mb-3   md:text-7xl md:mb-5  lg:text-8xl lg:mb-6`}>Beautiful Nails</h2>
-      <h1 className={`${zilla.className} text-center text-2xl mb-[210px] md:text-5xl md:mx-auto md:mb-[350px]  md:w-[500px] lg:mb-[300px] lg:text-6xl `}>
+      <h2 className={`${vibes.className} text-5xl  text-center mb-3   md:text-7xl md:mb-1  lg:text-8xl lg:mb-1`}>Beautiful Nails</h2>
+      <h1 className={`${zilla.className} text-center text-2xl mb-[210px] md:text-3xl md:mx-auto md:mb-[350px]  md:w-[500px] lg:mb-[300px] lg:text-4xl `}>
           Студія манікюру та педикюру
         </h1>
         <div className="relative flex justify-between items-end">
