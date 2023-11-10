@@ -1,11 +1,8 @@
 "use client";
 import CloseIcon from "./icons/CloseIcon";
 import { MouseEvent, useEffect } from "react";
-import { Zilla_Slab } from "next/font/google";
 import { CloseModal, FormValues } from "@/type/type";
 import { useForm, SubmitHandler } from "react-hook-form";
-
-const zilla = Zilla_Slab({ subsets: ["latin"], weight: ["700"] });
 
 const OrderServiseModal = ({ togleModal }: CloseModal) => {
   const {
@@ -43,7 +40,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
       className="fixed left-0 top-0 z-50 h-screen w-screen flex gap-0 justify-center items-center bg-black bg-opacity-40"
       onClick={handleOverlayClick}
     >
-      <div className="relative bg-white w-[300px] py-10 px-5">
+      <div className="relative bg-white w-[300px] rounded-3xl py-10 px-5">
         <button
           type="button"
           onClick={togleModal}

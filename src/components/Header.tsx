@@ -30,10 +30,8 @@ const Header = () => {
 
   return (
    
-      <header className={`${
-        isScrolled ? ' bg-black bg-opacity-60' : 'bg-transparent'
-      } fixed text-white left-0 right-0 top-0 z-10 md:py-[15px] lg:py-5`}>
-        <div className='container py-1 bg flex items-center justify-between '>
+      <header className={`absolute top-0 right-0 left-0 z-10 bg-transparent text-white md:py-[15px] lg:py-5`}>
+        <div className='container py-1 bg flex items-center gap-[150px]'>
         <Link href={'/'} className={`${vibes.className} text-2xl font-medium md:text-4xl`}>
           Beautiful <span className='block pl-4'>Nails</span> 
         </Link>
@@ -44,9 +42,8 @@ const Header = () => {
             </li>)}
           </ul>
         </nav>
-        <div className='flex items-center gap-7'>
-          <BtnOrderService style="hidden md:block md:px-5 md:py-2 md:text-white md:text-lg md:border-[2px] md:font-medium md:border-white transition-all duration-300 hover:bg-white hover:text-red font-medium focus:bg-white focus:text-red"/>
-        <BtnOpenMenu /></div> 
+          {/* <BtnOrderService style="hidden md:block md:px-5 md:py-2 md:text-white md:text-lg md:border-[2px] md:font-medium md:border-white transition-all duration-300 hover:bg-white hover:text-red font-medium focus:bg-white focus:text-red"/> */}
+       <BtnOpenMenu />
       
         </div>
       </header>

@@ -12,7 +12,7 @@ const config: Config = {
         red: '#660000',
         lightred: '#e0d3d3',
         redlight: '#ee0808',
-        lemon: '#FFF5A5',
+        whiteopasity: '#fdfeff4d',
         darkgray: '#565656',
         graphite: '#4D4D4D',
         disabled: '#A9A9A9',

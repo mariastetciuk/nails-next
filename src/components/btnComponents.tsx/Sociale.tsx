@@ -20,7 +20,7 @@ const FixedBtn = () => {
 
   const togglePopUp = () => setisShowPopUp((prev) => !prev);
 
- 
+
 
   useEffect(() => {
     const showNextImage = () => {

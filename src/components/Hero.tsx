@@ -3,67 +3,76 @@ import FixedBtn from "./btnComponents.tsx/Sociale";
 import Link from "next/link";
 import { Oranienbaum, Pompiere, Cinzel, Roboto_Serif } from "next/font/google";
 import { socialeList } from "@/data/navList";
+import TextAnimation from "./OrderServise";
+import OrderServise from "./OrderServise";
 
-const vibes = Cinzel({ subsets: ["latin"], weight: ["400"] });
+const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const oranienbaum = Oranienbaum({ subsets: ["latin"], weight: ["400"] });
 const pompiere = Pompiere({ subsets: ["latin"], weight: ["400"] });
 const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
 
-const cinzel = Bitter({ subsets: ["latin"], weight: ["700", "900"] });
+// const cinzel = Bitter({ subsets: ["latin"], weight: ["700", "900"] });
 const Hero = () => {
   return (
-    <section className="relative bgImage pt-[80px] w-screen scree text-white md:pt-[70px] md:h-[800px] lg:h-[800px] ">
-      <div className="container h-[400px]  md:pt-[70px] md:h-[800px] ">
+    <section className="relative bgImage w-screen scree text-white ">
+      <div className="container h-[500px] pt-[90px] md:pt-[120px] md:h-[700px] lg:pt-[140px] lg:h-[800px]">
         <h1
-          className={`${vibes.className} text-4xl  text-center mb-1 uppercase  md:text-7xl md:mb-1  lg:text-8xl lg:mb-1`}
+          className={`${cinzel.className} text-4xl  text-center mb-1 uppercase sm:text-5xl md:text-7xl md:mb-1  lg:text-8xl lg:mb-3`}
         >
           beautiful Nails
         </h1>
         <h2
-          className={`${vollkorn.className} text-center mb-8 uppercase text-lg  md:text-2xl  lg:text-4xl `}
+          className={`${vollkorn.className} text-center mb-8 uppercase text-lg sm:text-xl md:text-2xl md:mb-10 lg:text-4xl lg:mb-14`}
         >
           cтудія манікюру та педикюру
         </h2>
-<div className="mx-auto flex flex-wrap gap-3 w-[300px]">
-        <Link href={"tel: +380989505917"} className="flex gap-6">
-          <svg className="w-[26px] h-[26px] text-center fill-current text-current">
+        <div className="flex justify-around lg:mb-10 ">
+<div className="mx-auto flex flex-wrap gap-3 w-[300px] sm:w-[350px] sm:text-xl md:text-2xl md:w-[490px] md:gap-6 lg:w-[450px] lg:border-r-2 lg:border-white lg:border-opacity-25">
+        <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8">
+          <svg className="w-[26px] h-[26px] text-center fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-phone"></use>
           </svg>
           +38 (098) 9505917
         </Link>
-        <div className="flex gap-6 items-center text-white">
-          <svg className="w-[32px] h-[32px] fill-current text-current">
+        <div className="flex gap-6 items-center text-white md:gap-8">
+          <svg className="w-[32px] h-[32px] fill-current text-current sm:w-[40px] sm:h[40px] md:w-[46px] md:h-[46px]">
             <use href="/sprite.svg#icon-location"></use>
           </svg>
-          <p>м. Івано-Франківськ, вул. Пасічна, 2а (0поверх)</p>
+          <p>м. Івано-Франківськ, вул. Пасічна, 2а (0 поверх)</p>
         </div>
-        <div className="flex gap-6 text-white">
-          <svg className="w-[26px] h-[26px] fill-current text-current">
+        <div className="flex gap-6 text-white md:gap-8">
+          <svg className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-clock"></use>
           </svg>
           <p>пн-нд 9:00 - 20:00</p>
         </div>
         <Link
           href={"mailto:beautifulnails.if@gmail.com"}
-          className="flex gap-6 text-white"
+          className="flex gap-6 text-white md:gap-8"
         >
-          <svg className="w-[26px] h-[26px] fill-current text-current">
+          <svg className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-envelope"></use>
           </svg>
           <p>beautifulnails.if@gmail.com</p>
         </Link>
 
-        <ul className="flex py-6 justify-center items-center w-[100%] gap-5">
+       
+      </div>
+    <div className="hidden lg:block bg-white bg-opacity-20 py-5 w-[400px] h-[260px] rounded-3xl">
+   <OrderServise />
+    </div>
+  
+    </div>
+    <ul className="flex py-6 justify-center items-center w-[100%] gap-5 md:gap-7">
           {socialeList.map(({link, href}) => <li key={href}>
-            <Link href={link}  rel="noopener noreferrer" target='_blank' className="block text-white rounded-full p-2 boreder-2 border-transparent transition-all duration-300 hover:border-white focus:border-white">
-             <svg className="w-[32px] h-[32px] fill-current text-current">
+            <Link href={link}  rel="noopener noreferrer" target='_blank' className="block text-white rounded-full p-2 border-2 border-transparent transition-all duration-300 hover:border-white hover:text-red  focus:border-white focus:text-red">
+             <svg className="w-[32px] h-[32px] fill-current text-current sm:w-[38px] sm:h-[38px] md:w-[42px] md:h-[42px]">
          <use href={href}></use>
              </svg>
            </Link>
           </li>
           )}
         </ul>
-      </div>
       </div>
       <FixedBtn />
     </section>
