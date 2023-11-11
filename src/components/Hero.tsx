@@ -5,6 +5,8 @@ import { Oranienbaum, Pompiere, Cinzel, Roboto_Serif } from "next/font/google";
 import { socialeList } from "@/data/navList";
 import TextAnimation from "./OrderServise";
 import OrderServise from "./OrderServise";
+import TypingAnimation from "./TypingAnimation";
+
 
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const oranienbaum = Oranienbaum({ subsets: ["latin"], weight: ["400"] });
@@ -74,6 +76,7 @@ const Hero = () => {
           )}
         </ul>
       </div>
+      {/* <TypingAnimation words={['МАНІКЮР', 'ФРЕНЧ', 'ПЕДИКЮР']}/> */}
       <FixedBtn />
     </section>
   );

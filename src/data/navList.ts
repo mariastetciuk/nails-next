@@ -34,4 +34,12 @@ export  const socialeDirect: Array<SocialLinks> = [
   { link: 'https://t.me/beautifulnails_ukraine', href: '/sprite.svg#icon-telegram' },
   { link: 'viber://add?number=380989505917', href: '/sprite.svg#icon-viber' }
 ];
+
+export const response = {
+  successfull: {
+  title: 'Дякуємо за запис!', text: 'Ми зателефонуємо Вам найближчим часом)'},
+  error: {
+    title: 'Щось пішло не так!', text: 'Спробуйте будь ласка записатись знову.'
+  }
+}
  

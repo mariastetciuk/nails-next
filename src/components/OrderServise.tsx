@@ -1,23 +1,51 @@
 "use client";
-import { MouseEvent, useEffect } from "react";
-import { CloseModal, FormValues } from "@/type/type";
+import {  useState } from "react";
+import { FormValues } from "@/type/type";
 import { useForm, SubmitHandler } from "react-hook-form";
+import ResponseModal from "./ResponseModal";
+import { response } from "@/data/navList";
 
 const OrderServise = () => {
+  const [isSuccessfull, setIsSuccessfull] = useState(false);
+  const [isError, setisError] = useState(false);
+
+  const closeModal = () => setIsSuccessfull(false);
+  const closeResponseModal = () => setisError(false);
+ 
   const {
-    control,
     register,
     reset,
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>();
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    try {
+      const response = await fetch("https://formspree.io/f/xvojnpdv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
+      if (response.ok) {
+        reset();
+        setIsSuccessfull(true)
+       
+        // Handle successful form submission
+        console.log("Form submitted successfully!");
+      } else {
+        setisError(true)
+        // Handle form submission error
+        console.error("Form submission error");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
 
   return (
     <>
@@ -77,6 +105,8 @@ const OrderServise = () => {
           Записатися
         </button>
       </form>
+      {isSuccessfull && <ResponseModal closeModal={closeModal} response={response.successfull}/>}
+    {isError && <ResponseModal closeModal={closeResponseModal} response={response.error}/>}
     </>
   );
 };

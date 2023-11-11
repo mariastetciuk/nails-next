@@ -12,4 +12,18 @@ export type FormValues = {
 }
 
 export type TextAnimationProps = {
-  words: Array<string>};
+  words: Array<string>
+};
+
+  export type Response = {
+    title: string, 
+    text: string,
+  }
+
+  export type CloseResponseModal = {
+    closeModal: () => void;
+    togleModal?: () => void;
+    response: Response;
+  };
+
+

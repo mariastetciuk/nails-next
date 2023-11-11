@@ -1,12 +1,15 @@
 "use client";
 import CloseIcon from "./icons/CloseIcon";
-import { MouseEvent, useEffect } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 import { CloseModal, FormValues } from "@/type/type";
 import { useForm, SubmitHandler } from "react-hook-form";
+import ResponseModal from "./ResponseModal";
+import { response } from "@/data/navList";
 
 const OrderServiseModal = ({ togleModal }: CloseModal) => {
+  const [isSuccessfull, setIsSuccessfull] = useState(false);
+  const [isError, setIsError] = useState(false);
   const {
-    control,
     register,
     handleSubmit,
     formState: { errors },
@@ -17,10 +20,34 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
     }
   };
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
+  const closeModal = () => {
+    togleModal()
   };
+  const closeResponseModal = () => setIsError(true);
 
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    try {
+      const response = await fetch("https://formspree.io/f/xvojnpdv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setIsSuccessfull(true);
+      } else {
+        // Handle form submission error
+        setIsError(true);
+        console.error("Form submission error");
+      }
+    } catch (error) {
+      setIsError(true);
+      throw Error()
+      
+    }
+  };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handlePressESC = (event: KeyboardEvent): void => {
     if (event.key === "Escape") {
@@ -36,8 +63,9 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
   }, [handlePressESC]);
 
   return (
+    <>
     <div
-      className="fixed left-0 top-0 z-50 h-screen w-screen flex gap-0 justify-center items-center bg-black bg-opacity-40"
+      className="fixed left-0 top-0 z-40 h-screen w-screen flex gap-0 justify-center items-center bg-black bg-opacity-40"
       onClick={handleOverlayClick}
     >
       <div className="relative bg-white w-[300px] rounded-3xl py-10 px-5">
@@ -96,6 +124,9 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
         </form>
       </div>
     </div>
+    {isSuccessfull && <ResponseModal closeModal={closeModal} togleModal={togleModal} response={response.successfull}/>}
+    {isError && <ResponseModal closeModal={closeResponseModal} response={response.error}/>}
+    </>
   );
 };
 
