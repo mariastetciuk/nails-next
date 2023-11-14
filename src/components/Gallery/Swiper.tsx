@@ -61,8 +61,8 @@ setSlidesPerView(7)
           navigation
           pagination={{ clickable: true }}
           modules={[Navigation, Mousewheel]}
-          // onSwiper={(swiper) => console.log(swiper)}
-          // onSlideChange={(sl) => console.log(sl.realIndex)}
+          // onSwiper={(swiper) => console.log(swiper.realIndex)}
+          onSlideChange={(sl) => setCurrentSlideIndex(sl.realIndex + 1)}
           className="my-swiper "
         >
           {gallery.map(({ id, src, style }) => (
