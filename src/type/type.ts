@@ -26,4 +26,10 @@ export type TextAnimationProps = {
     response: Response;
   };
 
+  export type Gallery = {
+    id: number;
+    src: string;
+    style: string;
+  }
+
 

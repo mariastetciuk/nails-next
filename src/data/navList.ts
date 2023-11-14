@@ -1,3 +1,4 @@
+import { Gallery } from "@/type/type";
 
 
 type NavLinks = {
@@ -42,4 +43,19 @@ export const response = {
     title: 'Щось пішло не так!', text: 'Спробуйте будь ласка записатись знову.'
   }
 }
+
+export const gallery: Array<Gallery> = [
+  {id:1, src: '/gallery/img1.jpg', style: 'mr-0'},
+  {id:2, src: '/gallery/img2.jpg', style: 'mr-0'},
+  {id:3, src: '/gallery/img3.jpg', style: 'mr-0'},
+  {id:4, src: '/gallery/img4.jpg', style: 'mr-0'},
+  {id:5, src: '/gallery/img5.jpg', style: 'mr-0'},
+  {id:6, src: '/gallery/img6.jpg', style: 'mr-0'},
+  {id:7, src: '/gallery/img7.jpg', style: ''},
+  {id:8, src: '/gallery/img8.jpg', style: ''},
+  {id:9, src: '/gallery/img9.jpg', style: ''},
+  {id:10, src: '/gallery/img10.jpg', style: ''},
+  {id:11, src: '/gallery/img11.jpg', style: ''},
+  {id:12, src: '/gallery/img12.jpg', style: ''},
+] 
  
