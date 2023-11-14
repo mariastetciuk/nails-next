@@ -12,13 +12,16 @@ import '@/style/swiper.css'
 const Gallery = () => {
    const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
    const [slidesPerView, setSlidesPerView] = useState(3)
-   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+   const [windowWidth, setWindowWidth] = useState<number>(0);
 
    const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
 
   useEffect(() => {
+    if(typeof window !== 'undefined') {
+setWindowWidth(window.innerWidth)
+    }
     window.addEventListener('resize', handleResize);
     if(windowWidth <= 480) {
 setSlidesPerView(3)
