@@ -1,19 +1,13 @@
-import { Bitter } from "next/font/google";
+
 import FixedBtn from "./btnComponents.tsx/Sociale";
 import Link from "next/link";
 import { Oranienbaum, Pompiere, Cinzel, Roboto_Serif } from "next/font/google";
 import { socialeList } from "@/data/navList";
-import TextAnimation from "./OrderServise";
 import OrderServise from "./OrderServise";
-import TypingAnimation from "./TypingAnimation";
-
 
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
-const oranienbaum = Oranienbaum({ subsets: ["latin"], weight: ["400"] });
-const pompiere = Pompiere({ subsets: ["latin"], weight: ["400"] });
 const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
 
-// const cinzel = Bitter({ subsets: ["latin"], weight: ["700", "900"] });
 const Hero = () => {
   return (
     <section className="relative bgImage w-screen scree text-white ">

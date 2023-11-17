@@ -5,8 +5,8 @@ const cinzel = Cinzel({ subsets: ["latin"], weight: ["500"] });
 
 const AboutUs = () => {
   return (
-    <section className="  text-red ">
-      <div className="container py-10 md:py-12">
+    <section id='about-us' className=" text-red bg-lightgrey py-8 md:py-10 lg:py-12">
+      <div className="container">
         <h2 className={` mb-8 text-2xl font-medium text-center md:text-4xl`}>
           {" "}
           5 ПРИЧИН ОБРАТИ <span className={`${cinzel.className} pt-1 text-3xl block md:text-5xl`}>Beautiful Nails</span> 
