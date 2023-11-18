@@ -50,7 +50,7 @@ setSlidesPerView(7)
       <div className="container ">
       <Swiper
           slidesPerView={slidesPerView}
-          // slidesPerGroup={3}
+          loop={true}
           mousewheel
           navigation
           pagination={{ clickable: true }}

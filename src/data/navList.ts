@@ -13,7 +13,7 @@ type SocialLinks = {
 type Reviev = {
   id: number;
   src: string;
-}
+};
 
 export const navLinks: Array<NavLinks> = [
   { title: "Про нас", href: "#about-us" },
@@ -95,12 +95,7 @@ export const revievs: Array<Reviev> = [
   { id: 10, src: "/reviev/img10.jpg" },
   { id: 11, src: "/reviev/img11.jpg" },
   { id: 12, src: "/reviev/img12.jpg" },
-  { id: 14, src: "/reviev/img14.jpg" }, 
-   { id: 15, src: "/reviev/img15.jpg" },
-  
-  // { id: 8, src: "/reviev/revievs-8.jpg" },
-  // { id: 9, src: "/reviev/revievs-9.jpg" },
-  // { id: 10, src: "/reviev/revievs-10.jpg" },
-  // { id: 11, src: "/reviev/revievs-11.jpg" },
-  // { id: 12, src: "/reviev/revievs-12.jpg" },
+  { id: 14, src: "/reviev/img14.jpg" },
+  { id: 15, src: "/reviev/img15.jpg" },
+  { id: 16, src: "/reviev/img16.jpg" },
 ];

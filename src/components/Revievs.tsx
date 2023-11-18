@@ -22,6 +22,7 @@ const Revievs = () => {
           slidesPerView={1}
           navigation
           mousewheel
+          loop={true}
           autoplay={{delay: 5000}}
           pagination={{ clickable: true }}
           modules={[Navigation, Mousewheel, Autoplay]}
@@ -32,7 +33,7 @@ const Revievs = () => {
                 <div  className="relative ml-5 min-w-[250px] sm:ml-8 sm:w-[370px] h-[400px] shadow-xl md:mx-auto md:w-[450px] md:h-[450px]">
               <Image
                 src={src}
-                alt="thumbnail"
+                alt="reviev"
                 width={280}
                 height={320}
                 className="sm:w-[370px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[450px]"
