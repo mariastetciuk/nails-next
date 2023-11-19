@@ -59,14 +59,14 @@ setSlidesPerView(7)
           onSlideChange={(sl) => setCurrentSlideIndex(sl.realIndex + 1)}
           className="my-swiper mb-6"
         >
-          {gallery.map(({ id, src, style }) => (
+          {gallery.map(({ id, src }) => (
             <SwiperSlide key={id} className="">
               <Image
                 src={src}
                 alt="thumbnail"
                width={90}
                 height={50}
-                className={`${style}  md:h-[90px] lg:w-[110px] lg:h-[110px]`}
+                className="md:h-[90px] lg:w-[110px] lg:h-[110px]"
                 onClick={()=>handleSlideChange(id)}
                 
               />
