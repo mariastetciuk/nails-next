@@ -40,7 +40,7 @@ const Hero = () => {
           <svg className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-clock"></use>
           </svg>
-          <p>пн-нд 9:00 - 20:00</p>
+          <p>Пн-Нд: 9:00 - 20:00</p>
         </div>
         <Link
           href={"mailto:beautifulnails.if@gmail.com"}

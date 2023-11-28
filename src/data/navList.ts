@@ -72,7 +72,6 @@ export const gallery: Array<Gallery> = [
   { id: 2, src: "/gallery/img2.jpg" },
   { id: 3, src: "/gallery/img3.jpg" },
   { id: 4, src: "/gallery/img4.jpg" },
-  { id: 5, src: "/gallery/img5.jpg" },
   { id: 6, src: "/gallery/img6.jpg" },
   { id: 7, src: "/gallery/img7.jpg" },
   { id: 8, src: "/gallery/img8.jpg" },

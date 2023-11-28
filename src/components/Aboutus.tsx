@@ -15,17 +15,17 @@ const AboutUs = () => {
           <div className="flex flex-wrap gap-5 pl-6 md:border-l-2 md:border-red ">
             <div className="flex flex-wrap gap-5 md:w-[350px]">
             <p className="relative">
-              У нас майстрині з десятирічним досвідом
+              У нас майстрині з десятирічним досвідом.
               <span className="absolute -left-8 top-0 block w-4 h-4 rounded-full bg-red "></span>
             </p>
 
             <p className="relative">
-              Більше 100 кольорів гель-лаків, різноманітний декор
+              Більше 100 кольорів гель-лаків, різноманітний декор.
               <span className="absolute -left-8 top-1 block w-4 h-4 rounded-full bg-red "></span>
             </p>
             <p className="relative">
               Даємо гарантію на свою роботу, підбираємо носибельний матеріал
-              відповідно до ваших нігтів
+              відповідно до ваших нігтів.
               <span className="absolute -left-8 top-1 block w-4 h-4 rounded-full bg-red "></span>
             </p>
             </div>
@@ -43,11 +43,11 @@ const AboutUs = () => {
             <div className="flex flex-wrap gap-5 pl-6 border-l-2 border-red md:w-[280px]">
             <p className="relative">
               Дотримуємося усіх норм дезинфекції та стерилізації інструментів,
-              для кожного клієнта окрема одноразова пилочка
+              для кожного клієнта окрема одноразова пилочка.
               <span className="absolute -left-[34px] top-0 block w-4 h-4 rounded-full bg-red "></span>
             </p>
             <p className="relative">
-              Тривалість процедури - 90 хвилин
+              Тривалість процедури - 90 хвилин.
               <span className="absolute -left-[34px] top-2 block w-4 h-4 rounded-full bg-red "></span>
             </p>
             </div>
