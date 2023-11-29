@@ -18,19 +18,10 @@
 } */
 
 .swiper-button-next::after {
-  position: absolute;
-  right: -10px;
-    color: #660000;
-    z-index: 1111111;
-   
-    
-    
+    color: transparent;
   }
   
   .swiper-button-prev::after {
-    color: #660000;
-    position: absolute;
-    left: -10px;
-    
+    color: transparent;
   }
   

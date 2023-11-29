@@ -53,6 +53,7 @@ const Gallery = () => {
       <Swiper
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
         loop={true}
+        navigation={true}
         spaceBetween={10}
         slidesPerView={slidesPerView}
         freeMode={true}
