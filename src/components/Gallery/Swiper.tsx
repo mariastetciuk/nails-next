@@ -4,6 +4,8 @@ import { gallery } from "@/data/navList";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Thumbs } from "swiper/modules";
 import Image from "next/image";
+import CustomNextButton from "./CustomNextButton";
+import CustomPrevButton from "./CustomPrevButton";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -18,6 +20,9 @@ const Gallery = () => {
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
+
+  const onClickPrev = () => thumbsSwiper.slidePrev();
+  const onClickNext = () => thumbsSwiper.slideNext();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -47,6 +52,7 @@ const Gallery = () => {
     <section className="container py-4">
       <Swiper
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
+        loop={true}
         spaceBetween={10}
         slidesPerView={slidesPerView}
         freeMode={true}
@@ -68,10 +74,14 @@ const Gallery = () => {
       </Swiper>
       <Swiper
         spaceBetween={10}
-        navigation={true}
+        loop={true}
         thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
+        navigation={{
+          prevEl: ".custom-prev-button",
+          nextEl: ".custom-next-button",
+        }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="w-[280px] sm:w-[350px] md:w-[500px] md:h-[450px]  lg:w-[650px] lg:h-[550px]"
+        className="relative w-[280px] sm:w-[350px] md:w-[500px] md:h-[450px] sm:pl-5 lg:w-[630px] lg:h-[550px]"
       >
         {gallery.map(({ id, src }) => (
           <SwiperSlide key={id} className=" justify-center items-center">
@@ -80,110 +90,20 @@ const Gallery = () => {
               alt="thumbnail"
               width={320}
               height={250}
-              className=" md:w-[800px] md:h-[450px]  lg:w-[600px] lg:h-[550px]"
+              className=" md:w-[500px] sm:w-[350px]  md:h-[450px]  lg:w-[600px] lg:h-[550px]"
             />
           </SwiperSlide>
         ))}
+          
       </Swiper>
+      <div className="relative mx-auto max-w-[350px]">
+      <CustomPrevButton onClick={onClickPrev} />
+      <CustomNextButton onClick={onClickNext} />
+      </div>
+    
+    
+   
     </section>
   );
 };
-
-// const Gallery = () => {
-//   const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
-//   const [slidesPerView, setSlidesPerView] = useState(3);
-//   const [windowWidth, setWindowWidth] = useState<number>(0);
-
-//   const handleResize = () => {
-//     setWindowWidth(window.innerWidth);
-//   };
-
-//   useEffect(() => {
-//     if (typeof window !== "undefined") {
-//       setWindowWidth(window.innerWidth);
-//     }
-//     window.addEventListener("resize", handleResize);
-//     if (windowWidth <= 480) {
-//       setSlidesPerView(3);
-//     }
-//     if (windowWidth > 480 && windowWidth < 768) {
-//       setSlidesPerView(4);
-//     }
-//     if (windowWidth >= 768 && windowWidth < 1100) {
-//       setSlidesPerView(6);
-//     }
-//     if (windowWidth >= 1100) {
-//       setSlidesPerView(7);
-//     }
-//     console.log(windowWidth);
-//     console.log(slidesPerView);
-//     return () => {
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, [windowWidth, slidesPerView]);
-
-//   const handleSlideChange = (slider: number) => {
-//     setCurrentSlideIndex(slider);
-//   };
-
-//   return (
-//     <section id="gallery" className=" relative py-8 md:py-10 lg:py-12">
-//       <div className="container ">
-//         <Swiper
-//           slidesPerView={slidesPerView}
-//           loop={true}
-//           mousewheel
-//           navigation
-//           pagination={{ clickable: true }}
-//           modules={[Navigation]}
-//           // onSwiper={(swiper) => console.log(swiper.realIndex)}
-//           onSlideChange={(sl) => setCurrentSlideIndex(sl.realIndex + 1)}
-//           className=" mb-6"
-//         >
-//           {gallery.map(({ id, src }) => (
-//             <SwiperSlide key={id} className="">
-//               <Image
-//                 src={src}
-//                 alt="thumbnail"
-//                 width={90}
-//                 height={50}
-//                 className="md:h-[90px] lg:w-[110px] lg:h-[110px]"
-//                 onClick={() => handleSlideChange(id)}
-//               />
-//             </SwiperSlide>
-//           ))}
-//         </Swiper>
-//         <Image
-//           src={gallery[currentSlideIndex - 1].src}
-//           alt="large-image"
-//           width={320}
-//           height={250}
-//           className="mb-6 lg:mb-10  mx-auto md:w-[500px] md:h-[450px] lg:w-[600px] lg:h-[550px]"
-//         />
-//         {/* <div className="text-red">
-//           <button>
-//           <svg className="w-[50px] h-[50px] fill-current text-current">
-//          <use href='/public/icon/icon-facebook.svg'></use>
-//              </svg>
-//           </button>
-//           <button>
-//           <svg className="w-[50px] h-[50px] fill-current text-current">
-//          <use href='/icon/right-arrow.svg'></use>
-//              </svg>
-//           </button>
-//         </div> */}
-//         <Link
-//           href={"https://www.instagram.com/beautiful.nails.if"}
-//           rel="noopener noreferrer"
-//           target="_blank"
-//           className="block text-center mx-auto text-red border-2 bg-white border-red font-medium  py-2 w-[150px] rounded-3xl hover:text-white hover:bg-red md:w-[200px] md:text-lg lg:text-xl"
-//         >
-//           {" "}
-//           Побачити ще
-//         </Link>
-//       </div>
-//     </section>
-//   );
-// };
-
 export default Gallery;

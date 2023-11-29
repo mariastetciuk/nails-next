@@ -29,6 +29,10 @@ export type TextAnimationProps = {
   export type Gallery = {
     id: number;
     src: string;
-  }
+  };
+
+  export type CustomButtonProps = {
+    onClick: ()=> void;
+};
 
 
