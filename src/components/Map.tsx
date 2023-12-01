@@ -27,13 +27,12 @@ const Map = () => {
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          detectRetina={true}
         />
-        <object
+        {/* <object
           type="image/svg+xml"
           data={"marker.svg"}
           className="absolute z-[9999] h-[4rem] w-[4rem] xs:left-[45%] xs:top-[28%] md:left-[46%] md:top-[36%] lg:left-[48%] lg:top-[41%]"
-        />
+        /> */}
         <Marker position={center} icon={myLocationIcon}>
        </Marker>
           
