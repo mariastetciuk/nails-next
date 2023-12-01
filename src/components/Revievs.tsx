@@ -1,6 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Mousewheel, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { revievs } from "@/data/navList";
 import Image from "next/image";
 import '@/style/revievs.css'
@@ -9,7 +9,7 @@ const Revievs = () => {
   return (
     <section
       id="revievs"
-      className=" text-red py-8 md:py-10 lg:pb-12 mb-[200px]"
+      className=" text-red  py-8 md:py-10 lg:pb-12 mb-[150px]"
     >
       <div className="container h-[500px] lg:flex flex-row-reverse items-center gap-10">
         <h2 className="relative text-center uppercase leading-[90px] font-extrabold text-red text-[114px] text-opacity-70 mb-7 md:leading-[150px] md:text-[210px] md:mb-[80px] lg:text-[240px] lg:mb-5 lg:leading-[60px]">
@@ -21,11 +21,10 @@ const Revievs = () => {
         <Swiper
           slidesPerView={1}
           navigation
-          mousewheel
           loop={true}
           autoplay={{delay: 5000}}
           pagination={{ clickable: true }}
-          modules={[Navigation, Mousewheel, Autoplay]}
+          modules={[Navigation, Autoplay]}
           className="flex justify-center items-center "
         >
           {revievs.map(({ id, src }) => (
