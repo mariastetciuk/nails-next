@@ -49,7 +49,7 @@ const Gallery = () => {
   }, [windowWidth, slidesPerView]);
 
   return (
-    <section className="container py-4">
+    <section id='gallery' className="container py-4">
       <Swiper
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
         loop={true}

@@ -58,7 +58,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
         <ul className={`${zilla.className} text-red font-semibold text-lg px-6 md:px-8 md:text-2xl`}>
           {navLinks.map(({ title, href }) => (
             <li key={title} className="my-1 py-2 md:my-3">
-              <Link href={href} onClick={togleModal} rel="noopener noreferrer" className="transition-all duration-300 hover:border-b-2 hover:border-red focus:border-b-2 focus:border-red">{title}</Link>
+              <Link href={href} onClick={togleModal} className="transition-all duration-300 hover:border-b-2 hover:border-red focus:border-b-2 focus:border-red">{title}</Link>
             </li>
           ))}
         </ul>
