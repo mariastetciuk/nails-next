@@ -22,15 +22,15 @@ const Hero = () => {
         >
           cтудія манікюру та педикюру
         </h2>
-        <div className="flex justify-around lg:mb-10 ">
-<div className="mx-auto flex flex-wrap gap-3 w-[300px] sm:w-[350px] sm:text-xl md:text-2xl md:w-[490px] md:gap-6 lg:w-[450px] lg:border-r-2 lg:border-white lg:border-opacity-25">
-        <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-semibold focus:text-red">
+        <div className="mx-auto px-[60px] flex gap-[100px] lg:mb-10 ">
+<div className="flex flex-wrap gap-3 w-[300px] sm:w-[350px] sm:text-xl md:text-2xl md:w-[490px] md:gap-6 lg:w-[500px] lg:border-r-2 lg:border-white lg:border-opacity-25">
+        <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg className="w-[26px] h-[26px] text-center fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-phone"></use>
           </svg>
           +38 (098) 9505917
         </Link>
-        <Link href={"#map"} className="flex gap-6 items-center text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-semibold focus:text-red">
+        <Link href={"#map"} className="flex gap-6 items-center text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg className="w-[32px] h-[32px] fill-current text-current sm:w-[40px] sm:h[40px] md:w-[46px] md:h-[46px]">
             <use href="/sprite.svg#icon-location"></use>
           </svg>
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
         <Link
           href={"mailto:beautifulnails.if@gmail.com"}
-          className="flex gap-6 text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-semibold focus:text-red"
+          className="flex gap-6 text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red"
         >
           <svg className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-envelope"></use>

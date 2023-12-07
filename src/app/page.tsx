@@ -1,11 +1,10 @@
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
 import Hero from '@/components/Hero'
 import AboutUs from '@/components/Aboutus'
 import Gallery from '@/components/Gallery/Swiper'
 import Revievs from '@/components/Revievs'
-import Map from '@/components/Map'
 import Footer from '@/components/Footer'
+import Price from '@/components/Price'
 
 const MapComponent = dynamic(() => import('../components/Map'), {
   ssr: false,
@@ -16,6 +15,7 @@ export default function Home() {
     <main className="mx-auto">
     <Hero />
     <Gallery />
+    <Price />
     <AboutUs />
     <Revievs />
     <MapComponent />
