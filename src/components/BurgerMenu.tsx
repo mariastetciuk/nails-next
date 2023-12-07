@@ -32,7 +32,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
 
   return (
     <div
-      className={` fixed left-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-40`}
+      className={` fixed left-0 top-0 z-[555555] h-screen w-screen bg-black bg-opacity-40`}
       onClick={handleOverlayClick}
     >
       <div className="absolute right-0 top-0 w-[265px]  py-6 bg-white md:w-[350px]">

@@ -4,9 +4,9 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const Map = () => {
-  const center = { lat: 48.94223312190792, lng: 24.695944525987674 };
+  const center = { lat: 48.942141511985035, lng: 24.69562265972141 };
   const zoom = 15;
-  const locationName = "Beauriful Nails";
+  const locationName = "Beautiful Nails";
   const myLocationIcon = new L.Icon({
     iconUrl: "/icon/marker.gif",
     iconSize: [45, 45],
@@ -14,7 +14,7 @@ const Map = () => {
   });
 
   return (
-    <div className=" h-[300px] md:h-[360px] lg:h-[560px]">
+    <section id="map" className=" h-[300px] md:h-[360px] lg:h-[560px]">
       <MapContainer
         center={center}
         zoom={zoom}
@@ -35,7 +35,7 @@ const Map = () => {
         
         </Marker>
       </MapContainer>
-    </div>
+    </section>
   );
 };
 

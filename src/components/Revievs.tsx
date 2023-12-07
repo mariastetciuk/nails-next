@@ -9,9 +9,9 @@ const Revievs = () => {
   return (
     <section
       id="revievs"
-      className=" text-red py-8 md:py-16"
+      className=" text-red py-8 md:py-10 lg:py-12"
     >
-      <div className="container lg:flex flex-row-reverse gap-5">
+      <div className="container lg:flex gap-5">
         <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[114px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[59px] md:text-[210px] md:mb-[100px] lg:text-[200px] lg:mb-0 lg:w-[560px] lg:pt-[150px]">
           нам{" "}
           <span className=" font-bold left-1/2 -translate-x-1/2 text-black text-[45px] sm:text-[50px] md:text-[85px] text-opacity-1 md:-bottom-[102px] lg:bottom-0 lg:text-[85px]">
