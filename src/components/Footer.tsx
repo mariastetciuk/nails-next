@@ -15,14 +15,14 @@ const Footer = () => {
           </p>
 
           <div>
-            <p className="font-bold mb-3 text-left lg:mb-4 lg:w-[300px] lg:text-lg">Чекаємо Вас за адресою:</p>
+            <p className="font-bold mb-3 text-center md:text-left lg:mb-4 lg:w-[300px] lg:text-lg">Чекаємо Вас за адресою:</p>
 
             <p className="mb-4 md:mb-5">
               вул. Пасічна, 2а (0 поверх),{" "}
               <span className="block">м. Івано-Франківськ</span>
             </p>
           </div>
-          <p className="font-bold mb-3 text-left lg:mb-4 lg:w-[300px] lg:text-lg">Графік роботи:</p>
+          <p className="font-bold mb-3 text-center md:text-left lg:mb-4 lg:w-[300px] lg:text-lg">Графік роботи:</p>
           <p className="mb-2">Понеділок - Неділя</p>
           <p>9:00 - 20:00</p>
         </div>

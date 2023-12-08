@@ -114,8 +114,8 @@ export const revievs: Array<Reviev> = [
 export const price: Array<Price> = [
   { id: 1, src: "/price/img1.png", title: "Покриття гель-лаком", description: "Гігієнічний манікюр, покриття гель-лаком та дизайн", price: "400 грн." },
   { id: 2, src: "/price/img2.png", title: "Укріплення", description: "Гігієнічний манікюр, укріплення нігтів гелем, покриття гель-лаком та дизайн", price: "500 грн." },
-  { id: 3, src: "/price/img4.png", title: "Нарощення", description: "Гігієнічний манікюр, нарощення нігтів гелем, покриття гель-лаком дизайн", price: "700 грн." },
-  { id: 4, src: "/price/img3.png", title: "Гігієнічний манікюр", description: "", price: "250 грн." },
-  { id: 5, src: "/price/img6.png", title: "Гігієнічний педикюр", description: "Апаратна обробка стопи та палчиків, обрізання нігтів. Чоловічий, жіночий", price: "450 грн." },
-  { id: 6, src: "/price/img5.png", title: "Повний педикюр", description: "Апаратний педикюр, покриття г ель-лаком та дизайн", price: "600 грн." },
+  { id: 3, src: "/price/img4.png", title: "Нарощення", description: "Гігієнічний манікюр, нарощення нігтів гелем, покриття гель-лаком, дизайн", price: "700 грн." },
+  { id: 4, src: "/price/img3.png", title: "Гігієнічний манікюр", description: "Апаратний, обрізаний або комбінований", price: "250 грн." },
+  { id: 5, src: "/price/img6.png", title: "Гігієнічний педикюр", description: "Апаратна обробка стопи та пальчиків, обрізання нігтів. Чоловічий, жіночий", price: "450 грн." },
+  { id: 6, src: "/price/img5.png", title: "Повний педикюр", description: "Апаратний педикюр, покриття гель-лаком та дизайн", price: "600 грн." },
 ]
