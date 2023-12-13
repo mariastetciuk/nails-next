@@ -56,7 +56,7 @@ const Gallery = () => {
         navigation={true}
         spaceBetween={10}
         slidesPerView={slidesPerView}
-        touchEventsTarget={"wrapper"}
+        touchEventsTarget={"container"}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
