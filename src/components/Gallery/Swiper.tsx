@@ -60,7 +60,7 @@ const Gallery = () => {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper mb-4"
+        className="mySwiper cursor-pointer mb-4"
       >
         {gallery.map(({ id, src }) => (
           <SwiperSlide key={id} className="">

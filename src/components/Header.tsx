@@ -3,7 +3,6 @@ import { navLinks } from '@/data/navList';
 import Link from 'next/link';
 import { Dancing_Script, Zilla_Slab, Great_Vibes } from 'next/font/google';
 import BtnOpenMenu from './btnComponents.tsx/BtnOpenMenu';
-import BtnOrderService from './btnComponents.tsx/BtnOrderServise';
 import { useState, useEffect } from 'react';
 
 const dancing = Dancing_Script({subsets: ['latin'], weight: ['700']})
@@ -42,7 +41,6 @@ const Header = () => {
             </li>)}
           </ul>
         </nav>
-          {/* <BtnOrderService style="hidden md:block md:px-5 md:py-2 md:text-white md:text-lg md:border-[2px] md:font-medium md:border-white transition-all duration-300 hover:bg-white hover:text-red font-medium focus:bg-white focus:text-red"/> */}
        <BtnOpenMenu />
       
         </div>

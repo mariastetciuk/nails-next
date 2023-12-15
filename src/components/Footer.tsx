@@ -5,8 +5,8 @@ import Link from "next/link";
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const Footer = () => {
   return (
-    <footer className="bg-red py-8 md:py-10 lg:py-12 mb-[100px]">
-      <div className="container text-white flex flex-wrap gap-5 text-center md:flex-nowrap md:gap-[90px] lg:gap-[150px] md:text-left">
+    <footer className="bg-red">
+      <div className="container text-white py-8 md:py-10 lg:py-12 flex flex-wrap gap-5 text-center md:flex-nowrap md:gap-[90px] lg:gap-[150px] md:text-left">
         <div className="w-[100%] md:w-[300px] lg:w-[350px] text-lg">
           <p
             className={`${cinzel.className} text-3xl font-medium mb-3 md:text-4xl lg:mb-5`}
@@ -27,8 +27,8 @@ const Footer = () => {
           <p>9:00 - 20:00</p>
         </div>
         <div className="mx-auto">
-          <h3 className=" font-bold mb-3 text-left md:text-lg lg:mb-4">Меню</h3>
-          <ul className="flex flex-wrap w-[80px] mx-auto gap-3 lg:gap-4">
+          <h3 className=" font-bold mb-3 md:text-left md:text-lg lg:mb-4">Меню</h3>
+          <ul className="flex flex-wrap justify-center md:justify-start w-[80px] mx-auto gap-3 lg:gap-4">
             {navLinks.map(({ href, title }) => (
               <Link key={title} href={href} className="text-white md:text-lg">
                 {title}
@@ -54,6 +54,13 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+      </div>
+      <div className="text-white text-center border-t-2 border-white py-6 md:text-lg lg:text-xl">
+        <p className="inline">Розробка</p>
+       
+        <Link href={'https://t.me/Mariia_Stetsiuk'} rel="noopener noreferrer" target='_blank' className="mx-2 border-b-2 border-white ">Mariia Stetsiuk</Link>
+        2023. 
+        <p className="md:inline md:ml-2">© Усі права захищені</p>
       </div>
     </footer>
   );

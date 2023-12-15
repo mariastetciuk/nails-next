@@ -1,7 +1,6 @@
-// import TypingAnimation from "./TypingAnimation";
 import FixedBtn from "./btnComponents.tsx/Sociale";
 import Link from "next/link";
-import { Oranienbaum, Pompiere, Cinzel, Roboto_Serif } from "next/font/google";
+import { Cinzel, Roboto_Serif } from "next/font/google";
 import { socialeList } from "@/data/navList";
 import OrderServise from "./OrderServise";
 
@@ -70,7 +69,6 @@ const Hero = () => {
           )}
         </ul>
       </div>
-      {/* <TypingAnimation words={['МАНІКЮР', 'ФРЕНЧ', 'ПЕДИКЮР']}/> */}
       <FixedBtn />
     </section>
   );

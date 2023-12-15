@@ -14,7 +14,7 @@ const Map = () => {
   });
 
   return (
-    <section id="map" className=" h-[300px] md:h-[360px] lg:h-[560px]">
+    <section id="map" className=" h-[250px] md:h-[360px] lg:h-[560px]">
       <MapContainer
         center={center}
         zoom={zoom}
