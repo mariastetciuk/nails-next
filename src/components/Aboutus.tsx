@@ -6,6 +6,9 @@ const cinzel = Cinzel({ subsets: ["latin"], weight: ["500"] });
 const AboutUs = () => {
   return (
     <section id='about-us' className=" text-red  py-8 md:py-10 lg:py-12">
+        <div
+        className={`relative h-[240px] w-full bg-[url('/about/studio.jpg')] bg-cover bg-center bg-no-repeat sm:bg-fixed md:h-[240px] lg:h-[460px]`}
+      />
       <div className="container">
         <h2 className={` mb-8 text-2xl font-medium text-center md:text-4xl`}>
           {" "}

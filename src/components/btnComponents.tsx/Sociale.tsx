@@ -48,7 +48,7 @@ const FixedBtn = () => {
         </Link>
     
         <BtnOrderCall />
-<BtnOrderService style="absolute -bottom-[25px] left-1/2 -translate-x-1/2 md:bottom-5 inline-block text-center bg-white text-red py-1 text-lg rounded-3xl font-semibold px-3 border-4 border-red md:text-xl md:py-2 md:px-4 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white lg:hidden" />
+<BtnOrderService style="absolute left-1/2 -translate-x-1/2 inline-block text-center bg-white text-red py-1 text-lg rounded-3xl font-semibold px-3 border-4 border-red md:text-xl md:py-2 md:px-4 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white lg:hidden" />
       
 
         <div className="relative ">
