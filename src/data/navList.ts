@@ -25,11 +25,11 @@ type Price = {
 
 export const navLinks: Array<NavLinks> = [
   { title: "Про нас", href: "#about-us" },
-  { title: "Послуги", href: "#servises" },
+  { title: "Послуги", href: "#prise" },
   { title: "Ціни", href: "#prise" },
   { title: "Галерея", href: "#gallery" },
   { title: "Відгуки", href: "#revievs" },
-  { title: "Контакти", href: "#contacts" },
+  { title: "Контакти", href: "#map" },
 ];
 
 export const socialeList: Array<SocialLinks> = [

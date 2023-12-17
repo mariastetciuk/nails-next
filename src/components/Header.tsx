@@ -44,9 +44,9 @@ const Header = () => {
             {navLinks.map(({ title, href }) => (
               <li
                 key={title}
-                className="transition-all duration-300 hover:border-b-2 hover:border-white focus:border-white focus:border-b-2 py-3"
+                className=""
               >
-                <Link href={href}>{title}</Link>
+                <Link href={href} className="transition-all duration-300 hover:border-b-2 hover:border-white focus:border-white focus:border-b-2 py-3">{title}</Link>
               </li>
             ))}
           </ul>

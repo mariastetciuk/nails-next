@@ -54,6 +54,7 @@ const Gallery = () => {
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
         loop={true}
         navigation={true}
+        touchEventsTarget="wrapper"
         spaceBetween={10}
         slidesPerView={slidesPerView}
    

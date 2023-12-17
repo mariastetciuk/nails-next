@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Price = () => {
   return (
-    <section>
+    <section id='prise'>
       <div className="container py-8 md:py-10 lg:py-12">
       <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[84px] sm:leading-[33px] sm:text-[90px] text-opacity-70 mb-[80px] md:w-[400px] md:mx-auto md:leading-[59px] md:text-[130px] md:mb-[100px] lg:text-[200px] lg:mb-[90px] lg:w-[560px] lg:pt-[40px] lg:leading-[75px]">
           наш{" "}
