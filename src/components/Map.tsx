@@ -23,6 +23,7 @@ const Map = () => {
           width: "100%",
           height: "100%",
           maxWidth: "100vw",
+          zIndex: "1",
         }}
       >
         <TileLayer

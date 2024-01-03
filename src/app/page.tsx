@@ -5,6 +5,7 @@ import Gallery from '@/components/Gallery/Swiper'
 import Revievs from '@/components/Revievs'
 import Footer from '@/components/Footer'
 import Price from '@/components/Price'
+import Team from '@/components/Team'
 
 const MapComponent = dynamic(() => import('../components/Map'), {
   ssr: false,
@@ -18,6 +19,7 @@ export default function Home() {
     <Price />
     <AboutUs />
     <Revievs />
+    <Team />
     <MapComponent />
     <Footer />
   

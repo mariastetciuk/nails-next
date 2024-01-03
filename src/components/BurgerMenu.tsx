@@ -32,7 +32,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
 
   return (
     <div
-      className={` fixed left-0 top-0 z-[555555] h-screen w-screen bg-black bg-opacity-40`}
+      className={` fixed left-0 top-0 z-30 h-screen w-screen bg-black bg-opacity-40`}
       onClick={handleOverlayClick}
     >
       <div className="absolute right-0 top-0 w-[265px]  py-6 bg-white md:w-[350px]">
@@ -45,7 +45,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
          <use href='/sprite.svg#icon-close'></use>
              </svg>
         </button>
-        <div className="flex justify-around items-center border-b border-red">
+        <div className="flex gap-3 pl-6 items-center border-b border-red md:gap-10">
         <ul className="flex flex-col gap-5">
           {socialeList.map(({link, href}) => <li key={href}>
             <Link href={link} rel="noopener noreferrer" target='_blank' className="block text-red rounded-full p-2 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white">
@@ -64,7 +64,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
         </ul>
        
         </div >
-            <Link href={'tel: +380989505917'} className="block text-center text-2xl text-red py-3 font-semibold md:text-3xl md:py-5">+38(098) 9505917</Link>
+            <Link href={'tel: +380989505917'} className="block text-center text-2xl text-red py-3 font-semibold md:text-3xl md:py-5">+38 (098) 9505917</Link>
     
       </div>
       

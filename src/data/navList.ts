@@ -23,6 +23,15 @@ type Price = {
   description: string;
 };
 
+type Team = {
+  id: number;
+  src: string;
+  name: string;
+  item1: string;
+  item2:string;
+  item3: string;
+};
+
 export const navLinks: Array<NavLinks> = [
   { title: "Про нас", href: "#about-us" },
   { title: "Послуги", href: "#prise" },
@@ -118,4 +127,9 @@ export const price: Array<Price> = [
   { id: 4, src: "/price/img3.png", title: "Гігієнічний манікюр", description: "Апаратний, обрізаний або комбінований", price: "250 грн." },
   { id: 5, src: "/price/img6.png", title: "Гігієнічний педикюр", description: "Апаратна обробка стопи та пальчиків, обрізання нігтів. Чоловічий, жіночий", price: "450 грн." },
   { id: 6, src: "/price/img5.png", title: "Повний педикюр", description: "Апаратний педикюр, покриття гель-лаком та дизайн", price: "600 грн." },
-]
+];
+
+export const team: Array<Team> = [
+  {id:1, src: "/team/img1.jpg", name: "ірина", item1: "Досвід роботи - з 2014 року.", item2: "Власна технологія апаратеого манікюру та педикюру", item3: "Дизайн будь-якої складності."},
+  {id:2, src: "/team/img2.jpg", name: "олександра", item1: "Досвід роботи - з 2021 року.", item2: "З манікюрними ножницями на ти, швидке виконання обрізаного манікюру та педикюру.", item3: "Володіє знаннями для роботи зі складними нігтями."}
+];

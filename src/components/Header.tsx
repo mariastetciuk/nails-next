@@ -35,9 +35,12 @@ const Header = () => {
       <div className="container py-1 bg flex items-center gap-[150px]">
         <Link
           href={"/"}
-          className={`${vibes.className} text-2xl py-2 font-medium md:text-4xl`}
+          className={`${vibes.className} relative text-2xl py-2 font-medium md:text-4xl md:pl-8`}
         >
-          <Image src={'/logo.svg'} width={'60'} height={'60'} alt="logo" className="md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px]"/>
+          <Image src={"/group.svg"} width={'180'} height={'180'} alt="logo" className="absolute lg:left-0 lg:-top-3
+          "></Image>
+          <Image src={'/logosvg1.svg'} width={'70'} height={'70'} alt="logo" className="md:w-[100px] md:h-[100px] lg:w-[90px] lg:h-[90px]"/>
+         
         </Link>
         <nav className="hidden lg:block">
           <ul className={`${zilla.className} flex gap-5 text-xl`}>
