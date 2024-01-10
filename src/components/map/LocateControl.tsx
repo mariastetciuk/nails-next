@@ -10,7 +10,7 @@ const LocateControl = () => {
   };
 
   return (
-      <button onClick={handleClick} className='absolute top-[100px] left-2 p-3 z-50 text-white'>Beautiful Nails</button>
+      <button onClick={handleClick} className='absolute top-[100px] left-2 p-3 z-50 text-white'>Nails</button>
   );
 };
 

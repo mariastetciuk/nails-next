@@ -38,7 +38,11 @@ const Map = () => {
         </Marker>
         <LocateControl />
       </MapContainer>
-      <button className="absolute z-30 left-2 pointer-events-none top-[100px] p-1 rounded-2xl bg-red text-white ">Beautiful Nails</button>
+      <button className="absolute z-30 left-[9px] pointer-events-none top-[80px] px-1  bg-white border-gray-400 border-2 text-black ">
+      <svg className="w-[21px] h-[32px] fill-current text-current ">
+         <use href={"/sprite.svg#icon-location"}></use>
+             </svg>
+      </button>
     </section>
   );
 };
