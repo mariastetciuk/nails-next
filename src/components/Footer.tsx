@@ -30,7 +30,7 @@ const Footer = () => {
           <h3 className=" font-bold mb-3 md:text-left md:text-lg lg:mb-4">Меню</h3>
           <ul className="flex flex-wrap justify-center md:justify-start w-[80px] mx-auto gap-3 lg:gap-4">
             {navLinks.map(({ href, title }) => (
-              <Link key={title} href={href} className="text-white md:text-lg">
+              <Link key={title} href={href} className="text-white md:text-lg border-b-2 border-transparent transition-all duration-300 hover:border-white  focus:border-white">
                 {title}
               </Link>
             ))}

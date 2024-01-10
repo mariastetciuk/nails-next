@@ -14,15 +14,37 @@ import "@/style/swiper.css";
 
 const Gallery = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+  const [currentGallery, setCurrentGallery] = useState("/gallery/img1.jpg");
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [windowWidth, setWindowWidth] = useState<number>(0);
+
+  const currentImg = (id: number) => {
+    const activeSlide = gallery.find((img) => img.id === id);
+    const currentImg = activeSlide?.src || "/gallery/img1.jpg";
+    setCurrentGallery(currentImg);
+  };
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
 
-  const onClickPrev = () => thumbsSwiper.slidePrev();
-  const onClickNext = () => thumbsSwiper.slideNext();
+  const onClickPrev = () => {
+    thumbsSwiper.slidePrev();
+    const activeSlide = gallery.find(
+      (img) => img.id === thumbsSwiper.realIndex
+    );
+    const currentImg = activeSlide?.src || "/gallery/img1.jpg";
+    setCurrentGallery(currentImg);
+  };
+
+  const onClickNext = () => {
+    thumbsSwiper.slideNext();
+    const activeSlide = gallery.find(
+      (img) => img.id === thumbsSwiper.realIndex
+    );
+    const currentImg = activeSlide?.src || "/gallery/img1.jpg";
+    setCurrentGallery(currentImg);
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -49,22 +71,31 @@ const Gallery = () => {
   }, [windowWidth, slidesPerView]);
 
   return (
-    <section id='gallery' className="container py-4">
+    <section id="gallery" className="container py-4">
       <Swiper
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
+        onSlideChange={(swiper) => {
+          const activeSlide = gallery.find(
+            (img) => img.id === swiper.realIndex
+          );
+          const currentImg = activeSlide?.src || "/gallery/img1.jpg";
+          setCurrentGallery(currentImg);
+        }}
         loop={true}
-        navigation={true}
         touchEventsTarget="wrapper"
         spaceBetween={10}
         slidesPerView={slidesPerView}
-   
+        navigation={{
+          prevEl: ".custom-prev-button",
+          nextEl: ".custom-next-button",
+        }}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper cursor-pointer mb-4"
       >
         {gallery.map(({ id, src }) => (
-          <SwiperSlide key={id} className="">
+          <SwiperSlide key={id} className="" onClick={() => currentImg(id)}>
             <Image
               src={src}
               alt="thumbnail"
@@ -75,37 +106,17 @@ const Gallery = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Swiper
-        spaceBetween={10}
-        loop={true}
-        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
-        navigation={{
-          prevEl: ".custom-prev-button",
-          nextEl: ".custom-next-button",
-        }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="relative w-[280px] sm:w-[350px] md:w-[500px] md:h-[450px] sm:pl-5 lg:w-[630px] lg:h-[550px]"
-      >
-        {gallery.map(({ id, src }) => (
-          <SwiperSlide key={id} className=" justify-center items-center">
-            <Image
-              src={src}
-              alt="thumbnail"
-              width={320}
-              height={250}
-              className=" md:w-[500px] sm:w-[350px]  md:h-[450px]  lg:w-[600px] lg:h-[550px]"
-            />
-          </SwiperSlide>
-        ))}
-          
-      </Swiper>
+      <Image
+        src={currentGallery}
+        alt="thumbnail"
+        width={320}
+        height={250}
+        className="mx-auto md:w-[500px] sm:w-[350px]  md:h-[450px]  lg:w-[600px] lg:h-[550px]"
+      />
       <div className="relative mx-auto max-w-[350px]">
-      <CustomPrevButton onClick={onClickPrev} />
-      <CustomNextButton onClick={onClickNext} />
+        <CustomPrevButton onClick={onClickPrev} />
+        <CustomNextButton onClick={onClickNext} />
       </div>
-    
-    
-   
     </section>
   );
 };
