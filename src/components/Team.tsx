@@ -5,9 +5,9 @@ const Team = () => {
   return (
     <section>
       <div className="container py-8 md:py-10 lg:py-12 text-red">
-        <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[100px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[68px] md:text-[180px] md:mb-[50px] lg:mb-10 lg:w-[560px] lg:leading-[75px] lg:pt-[50px] lg:mx-auto">
+        <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[100px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[68px] md:text-[180px] md:mb-[50px] lg:mb-10 lg:w-[560px] lg:leading-[70px] lg:pt-[50px] lg:mx-auto">
           наша{" "}
-          <span className=" font-bold text-black text-[45px] sm:text-[50px] md:text-[100px] text-opacity-1 lg:text-[85px]">
+          <span className=" font-bold text-black text-[45px] sm:text-[50px] md:text-[100px] text-opacity-1 lg:pl-9">
             команда
           </span>
         </h2>
