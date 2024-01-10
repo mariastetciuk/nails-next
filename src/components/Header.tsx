@@ -35,13 +35,14 @@ const Header = () => {
       <div className="container py-1 bg flex items-center gap-[150px]">
         <Link
           href={"/"}
-          className={`${vibes.className} relative text-2xl py-2 font-medium md:text-4xl md:pl-8`}
+          className="relative "
         >
-          <Image src={"/group.svg"} width={'180'} height={'180'} alt="logo" className="absolute lg:left-0 lg:-top-3
+          <Image src={"/logo7.svg"} width={'130'} height={'130'} alt="logo" className=" md:w-[150px] md:-[150px]
           "></Image>
-          <Image src={'/logosvg1.svg'} width={'70'} height={'70'} alt="logo" className="md:w-[100px] md:h-[100px] lg:w-[90px] lg:h-[90px]"/>
+          <Image src={'/logosvg1.svg'} width={'50'} height={'50'} alt="logo" className="absolute top-5 left-8 md:w-[60px] md:h-[60px] md:left-9"/>
          
         </Link>
+       
         <nav className="hidden lg:block">
           <ul className={`${zilla.className} flex gap-5 text-xl`}>
             {navLinks.map(({ title, href }) => (
