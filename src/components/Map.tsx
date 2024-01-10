@@ -2,6 +2,7 @@
 import { MapContainer, TileLayer, Marker,Tooltip } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import LocateControl from "./map/LocateControl";
 
 const Map = () => {
   const center = { lat: 48.942141511985035, lng: 24.69562265972141 };
@@ -14,7 +15,7 @@ const Map = () => {
   });
 
   return (
-    <section id="map" className=" h-[250px] md:h-[360px] lg:h-[560px]">
+    <section id="map" className="relative h-[250px] md:h-[360px] lg:h-[560px]">
       <MapContainer
         center={center}
         zoom={zoom}
@@ -35,7 +36,9 @@ const Map = () => {
             
         
         </Marker>
+        <LocateControl />
       </MapContainer>
+      <button className="absolute z-30 left-2 pointer-events-none top-[100px] p-1 rounded-2xl bg-red text-white ">Beautiful Nails</button>
     </section>
   );
 };
