@@ -20,12 +20,12 @@ Just [follow the link](https://nails-project-mu.vercel.app/) and enjoy.
 ## Technologies
 
 
-![Static Badge](https://img.shields.io/badge/Next.JS-black?logo=nextdotjs)
-![Static Badge](https://img.shields.io/badge/TypeScript-black?style=flat&logo=typescript&color=black)
-![Static Badge](https://img.shields.io/badge/Tailwind%20CSS-%2306B6D4?style=flat&logo=tailwindcss&color=black)
+![Static Badge](https://img.shields.io/badge/Next.JS-%238a8181?style=for-the-badge&logo=nextdotjs&labelColor=black)
+![Static Badge](https://img.shields.io/badge/TypeScript-grey?style=for-the-badge&logo=TypeScript&labelColor=black)
+![Static Badge](https://img.shields.io/badge/Tailwind%20CSS-green?style=for-the-badge&logo=tailwindcss&labelColor=black)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Static Badge](https://img.shields.io/badge/Versel-black?logo=vercel)
+![Static Badge](https://img.shields.io/badge/vercel-%23616d36?style=for-the-badge&logo=vercel&labelColor=black)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
