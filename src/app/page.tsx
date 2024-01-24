@@ -19,10 +19,8 @@ export default function Home() {
     <Price />
     <AboutUs />
     <Revievs />
-    <Team />
+    {/* <Team /> */}
     <MapComponent />
-    <Footer />
-  
     </main>
   )
 }

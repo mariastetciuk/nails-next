@@ -5,7 +5,7 @@ import Link from "next/link";
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const Footer = () => {
   return (
-    <footer className="bg-red">
+    <div className="bg-red">
       <div className="container text-white py-8 md:py-10 lg:py-12 flex flex-wrap gap-5 text-center md:flex-nowrap md:gap-[90px] lg:gap-[150px] md:text-left">
         <div className="w-[100%] md:w-[300px] lg:w-[350px] text-lg">
           <p
@@ -62,7 +62,7 @@ const Footer = () => {
         2023. 
         <p className="md:inline md:ml-2">© Усі права захищені</p>
       </div>
-    </footer>
+    </div>
   );
 };
 

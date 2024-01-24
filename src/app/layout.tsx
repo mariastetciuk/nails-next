@@ -3,12 +3,19 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Head from 'next/head'
+import Footer from '@/components/Footer'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Beautiful Nails',
   description: 'Manicure and pedicure Ivano-Frankivsk',
+  icons: {
+    icon: {
+      url: '/favicon.png',
+      href: '/favicon.png'
+    }
+  }
 }
 
 export default function RootLayout({
@@ -18,13 +25,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ua">
-      <Head>
-        <link rel="icon" href='/favicon.png' />
-      </Head>
       
       <body className={montserrat.className}>
+        <header>
         <Header />
-        {children}</body>
+        </header>
+        <main>
+        {children}
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+        </body>
     </html>
   )
 }
