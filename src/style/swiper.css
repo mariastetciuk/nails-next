@@ -12,10 +12,19 @@
 
 
 }
+/* 
+.swiper-container {
+  overflow: visible;
+}
 
-/* .swiper-slide {
-  margin-right: 0;
-} */
+.swiper-slide {
+  background-clip: padding-box;
+  border: 1px solid red;
+}  */
+
+/* .swiper-slide-active  {
+  opacity: 1;
+}  */
 
 .swiper-button-next::after {
     color: transparent;
@@ -23,5 +32,13 @@
   
   .swiper-button-prev::after {
     color: transparent;
+  }
+
+  .current__slider {
+    opacity: 1;
+  }
+  
+  .slider  {
+    opacity: 0.7;
   }
   

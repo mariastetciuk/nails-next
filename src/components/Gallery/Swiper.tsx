@@ -71,7 +71,9 @@ const Gallery = () => {
   }, [windowWidth, slidesPerView]);
 
   return (
-    <section id="gallery" className="container py-4">
+    <section id="gallery" className="container py-4 relative">
+       <CustomPrevButton onClick={onClickPrev} />
+           <CustomNextButton onClick={onClickNext} />
       <Swiper
         onSwiper={(swiper) => setThumbsSwiper(swiper)}
         onSlideChange={(swiper) => {
@@ -92,7 +94,7 @@ const Gallery = () => {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper cursor-pointer mb-4"
+        className="mySwiper cursor-pointer mb-8"
       >
         {gallery.map(({ id, src }) => (
           <SwiperSlide key={id} className="" onClick={() => currentImg(id)}>
@@ -101,11 +103,16 @@ const Gallery = () => {
               alt="thumbnail"
               width={90}
               height={50}
-              className="md:h-[90px] lg:w-[110px] lg:h-[110px]"
+              className={`${currentGallery === src ? 'current__slider' : 'slider'} "md:h-[90px] lg:w-[110px] lg:h-[110px]"`}
             />
           </SwiperSlide>
         ))}
+        
       </Swiper>
+      {/* <div className="relative mx-auto max-w-[350px]">
+        <CustomPrevButton onClick={onClickPrev} />
+        <CustomNextButton onClick={onClickNext} />
+      </div> */}
       <Image
         src={currentGallery}
         alt="thumbnail"
@@ -113,10 +120,7 @@ const Gallery = () => {
         height={250}
         className="mx-auto md:w-[500px] sm:w-[350px]  md:h-[450px]  lg:w-[600px] lg:h-[550px]"
       />
-      <div className="relative mx-auto max-w-[350px]">
-        <CustomPrevButton onClick={onClickPrev} />
-        <CustomNextButton onClick={onClickNext} />
-      </div>
+     
     </section>
   );
 };
