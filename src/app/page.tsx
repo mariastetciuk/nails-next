@@ -4,6 +4,7 @@ import AboutUs from '@/components/Aboutus'
 import Gallery from '@/components/Gallery/Swiper'
 import Revievs from '@/components/Revievs'
 import Price from '@/components/Price'
+import Team from '@/components/Team'
 
 
 const MapComponent = dynamic(() => import('../components/Map'), {
@@ -18,7 +19,7 @@ export default function Home() {
     <Price />
     <AboutUs />
     <Revievs />
-    {/* <Team /> */}
+    <Team />
     <MapComponent />
     </main>
   )
