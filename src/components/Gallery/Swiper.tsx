@@ -63,8 +63,6 @@ const Gallery = () => {
     if (windowWidth >= 1100) {
       setSlidesPerView(10);
     }
-    console.log(windowWidth);
-    console.log(slidesPerView);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -103,16 +101,11 @@ const Gallery = () => {
               alt="thumbnail"
               width={90}
               height={50}
-              className={`${currentGallery === src ? 'current__slider' : 'slider'} "md:h-[90px] lg:w-[110px] lg:h-[110px]"`}
+              className={`${currentGallery === src ? 'current__slider' : 'slider'} "w-[90] h-[50] md:h-[90px] lg:w-[110px] lg:h-[110px]"`}
             />
           </SwiperSlide>
         ))}
-        
       </Swiper>
-      {/* <div className="relative mx-auto max-w-[350px]">
-        <CustomPrevButton onClick={onClickPrev} />
-        <CustomNextButton onClick={onClickNext} />
-      </div> */}
       <Image
         src={currentGallery}
         alt="thumbnail"
@@ -120,7 +113,6 @@ const Gallery = () => {
         height={250}
         className="mx-auto md:w-[500px] sm:w-[350px]  md:h-[450px]  lg:w-[600px] lg:h-[550px]"
       />
-     
     </section>
   );
 };
