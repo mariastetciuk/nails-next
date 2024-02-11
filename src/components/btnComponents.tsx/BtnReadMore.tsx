@@ -9,7 +9,7 @@ const BtnReadMore = () => {
     <>
       {!readMore && (
         <button
-          className="mb-5 cursor-pointer pr-[80px]"
+          className="mb-5 cursor-pointer pr-[80px] md:hidden"
           type="button"
           onClick={() => {
             setReadMore((prev) => !prev);
@@ -18,7 +18,7 @@ const BtnReadMore = () => {
           Дізнатись більше...
         </button>
       )}
-      <div className={`${readMore ? "" : "hidden"} `}>
+      <div className={`${readMore ? "" : "hidden"} md:block`}>
         <p className="mb-5">
           {
             "Студія гостинно відкрила двері для своїх перших клієнтів 1 жовтня 2022 року. У доглядових процедурах завжди поєднуємо максимальний комфорт і турботу про здоров'я клієнтів, за що і отримали визнання серед клієнтів."

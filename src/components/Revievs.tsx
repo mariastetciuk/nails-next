@@ -9,7 +9,7 @@ const Revievs = () => {
   return (
     <section
       id="revievs"
-      className=" text-red py-8 md:py-10 lg:py-12"
+      className=" text-red pb-8 pt-[64px] md:pb-10 md:pt-[94px] lg:pb-[60px] lg:pt-[60px]"
     >
       <div className="container lg:flex gap-5">
         <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[114px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[59px] md:text-[210px] md:mb-[100px] lg:text-[200px] lg:mb-0 lg:w-[560px] lg:pt-[150px]">

@@ -69,7 +69,7 @@ const Gallery = () => {
   }, [windowWidth, slidesPerView]);
 
   return (
-    <section id="gallery" className="container py-4 relative">
+    <section id="gallery" className="container pb-8 pt-4 md:pb-10 lg:pb-[60px] relative">
        <CustomPrevButton onClick={onClickPrev} />
            <CustomNextButton onClick={onClickNext} />
       <Swiper

@@ -10,7 +10,7 @@ const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
 const Hero = () => {
   return (
     <section className="relative bgImage w-screen scree text-white ">
-      <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:h-[700px] lg:pt-[140px] lg:h-[800px]">
+      <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:max-h-[700px] lg:pt-[140px] lg:max-h-[800px]">
         <h1
           className={`${cinzel.className} text-4xl  text-center mb-1 uppercase sm:text-5xl md:text-7xl md:mb-1  lg:text-8xl lg:mb-3`}
         >
@@ -21,7 +21,7 @@ const Hero = () => {
         >
           cтудія манікюру та педикюру
         </h2>
-        <div className="mx-auto px-[25px] sm:px-60px md:flex sm:gap-[100px] lg:mb-10 ">
+        <div className="mx-auto px-[25px] sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-10 ">
 <div className="flex flex-wrap gap-3 w-[300px] sm:w-[350px] sm:text-xl md:text-2xl md:w-[490px] md:gap-6 lg:w-[500px] lg:border-r-2 lg:border-white lg:border-opacity-25">
         <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg className="w-[26px] h-[26px] text-center fill-current text-current md:w-[32px] md:h-[32px]">

@@ -7,7 +7,6 @@ import BurgerMenu from "../BurgerMenu";
 
 const BtnOpenMenu = () => {
     const [isShowMenu, setIsShowMenu] = useState(false);
-
     const togleModal = () => setIsShowMenu((prev)=>!prev);
 return (
   <div className="fixed left-0 right-5 top-5 z-[9999] md:top-8 lg:top-[45px]">
