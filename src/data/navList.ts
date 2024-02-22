@@ -103,21 +103,20 @@ export const gallery: Array<Gallery> = [
 ];
 
 export const revievs: Array<Reviev> = [
-  { id: 1, src: "/reviev/img1.JPG" },
-  { id: 2, src: "/reviev/img16.JPG" },
-  { id: 3, src: "/reviev/img3.JPG" },
-  { id: 4, src: "/reviev/img4.JPG" },
-  { id: 5, src: "/reviev/img5.JPG" },
-  { id: 6, src: "/reviev/img6.JPG" },
-  { id: 7, src: "/reviev/img7.JPG" },
-  { id: 8, src: "/reviev/img8.JPG" },
-  { id: 9, src: "/reviev/img9.JPG" },
-  { id: 10, src: "/reviev/img10.JPG" },
-  { id: 11, src: "/reviev/img11.JPG" },
-  { id: 12, src: "/reviev/img12.JPG" },
-  { id: 14, src: "/reviev/img14.JPG" },
-  { id: 15, src: "/reviev/img15.JPG" },
-  { id: 16, src: "/reviev/img16.JPG" },
+  { id: 1, src: "/revievs/photo_1.jpg" },
+  { id: 3, src: "/revievs/photo_2.jpg" },
+  { id: 4, src: "/revievs/photo_3.jpg" },
+  { id: 5, src: "/revievs/photo-4.jpg" },
+  { id: 6, src: "/revievs/photo-5.jpg" },
+  { id: 7, src: "/revievs/photo-6.jpg" },
+  { id: 8, src: "/revievs/photo-7.jpg" },
+  { id: 9, src: "/revievs/photo-8.jpg" },
+  { id: 10, src: "/revievs/photo-9.jpg" },
+  { id: 11, src: "/revievs/photo-10.jpg" },
+  { id: 12, src: "/revievs/photo-11.jpg" },
+  { id: 13, src: "/revievs/photo-12.jpg" },
+  { id: 15, src: "/revievs/photo-13.jpg" },
+  
 ];
 
 export const price: Array<Price> = [
