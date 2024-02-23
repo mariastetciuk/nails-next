@@ -180,6 +180,7 @@ position: relative;
   } */
 
   .swiper-slide {
+    height: 300px !important;
     text-align: center;
     font-size: 18px;
     background-color: #fff;
