@@ -33,7 +33,7 @@ const Gallery = () => {
         }}
         pagination={{el: '.swiper-pagination', clickable: true}}
         modules={[EffectCoverflow, Navigation, Pagination]}
-        className=" h-[300px]"
+        className=""
       >
         {gallery.map(({ id, src }) => (
           <SwiperSlide key={id} className="min-h-[300px]">
