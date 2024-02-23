@@ -33,11 +33,11 @@ const Gallery = () => {
         }}
         pagination={{el: '.swiper-pagination', clickable: true}}
         modules={[EffectCoverflow, Navigation, Pagination]}
-        className=" h-[250px]"
+        className=" h-[300px]"
       >
         {gallery.map(({ id, src }) => (
           <SwiperSlide key={id} className="">
-            <Image src={src} alt="thumbnail" width={250} height={400} className=" rounded-lg"/>
+            <Image src={src} alt="thumbnail" width={250} height={300} className=" rounded-lg"/>
           </SwiperSlide>
         ))}
 
