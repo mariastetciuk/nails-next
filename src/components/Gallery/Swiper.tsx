@@ -8,7 +8,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "@/style/swiper.css";
+import { useWidth } from "@/hook/useWidth";
 const Gallery = () => {
+  const currentWidth = useWidth();
   return (
     <section
       id="gallery"
@@ -19,7 +21,7 @@ const Gallery = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={2}
+        slidesPerView={currentWidth < 500 ? 2 : 3}
         coverflowEffect={{
           rotate: 1,
           stretch: 0,
