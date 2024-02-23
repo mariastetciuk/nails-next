@@ -1,11 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { gallery } from "@/data/navList";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import Image from "next/image";
-import CustomNextButton from "./CustomNextButton";
-import CustomPrevButton from "./CustomPrevButton";
+// import CustomNextButton from "./CustomNextButton";
+// import CustomPrevButton from "./CustomPrevButton";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
