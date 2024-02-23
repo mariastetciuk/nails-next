@@ -38,8 +38,8 @@ const Gallery = () => {
         className=""
       >
         {gallery.map(({ id, src }) => (
-          <SwiperSlide key={id} className="min-h-[300px]">
-            <Image src={src} alt="thumbnail" width={250} height={300} className=" rounded-lg"/>
+          <SwiperSlide key={id} className="min-h-[300px] w-100%">
+            <Image src={src} alt="thumbnail" width={350} height={300} className=" rounded-lg"/>
           </SwiperSlide>
         ))}
 
