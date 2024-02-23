@@ -1,55 +1,55 @@
-// "use client";
-// import { gallery } from "@/data/navList";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
-// import Image from "next/image";
-// import "swiper/css";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "@/style/swiper.css";
-// const Gallery = () => {
-//   return (
-//     <section
-//       id="gallery"
-//       className="container pt-8"
-//     >
-//       <Swiper
-//         effect={"coverflow"}
-//         grabCursor={true}
-//         centeredSlides={true}
-//         loop={true}
-//         slidesPerView={2}
-//         coverflowEffect={{
-//           rotate: 1,
-//           stretch: 0,
-//           depth: 100,
-//           modifier: 3,
-//         }}
-//         navigation={{
-//           nextEl: '.swiper-button-next',
-//           prevEl: '.swiper-button-prev',
+"use client";
+import { gallery } from "@/data/navList";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "@/style/swiper.css";
+const Gallery = () => {
+  return (
+    <section
+      id="gallery"
+      className=" pt-8"
+    >
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={2}
+        coverflowEffect={{
+          rotate: 1,
+          stretch: 0,
+          depth: 100,
+          modifier: 3,
+        }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
           
-//         }}
-//         pagination={{el: '.swiper-pagination', clickable: true}}
-//         modules={[EffectCoverflow, Navigation, Pagination]}
-//         className=" h-[200px]"
-//       >
-//         {gallery.map(({ id, src }) => (
-//           <SwiperSlide key={id} className="">
-//             <Image src={src} alt="thumbnail" width={250} height={400} className=" rounded-lg"/>
-//           </SwiperSlide>
-//         ))}
+        }}
+        pagination={{el: '.swiper-pagination', clickable: true}}
+        modules={[EffectCoverflow, Navigation, Pagination]}
+        className=" h-[250px]"
+      >
+        {gallery.map(({ id, src }) => (
+          <SwiperSlide key={id} className="">
+            <Image src={src} alt="thumbnail" width={250} height={400} className=" rounded-lg"/>
+          </SwiperSlide>
+        ))}
 
-//         <div className="slider-controler">
-//           <div className="swiper-button-prev slider-arrow"></div>
-//           <div className="swiper-button-next slider-arrow"> </div>
-//           <div className="swiper-pagination"></div>
-//         </div>
-//       </Swiper>
-//     </section>
-//   );
-// };
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow"></div>
+          <div className="swiper-button-next slider-arrow"> </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
+    </section>
+  );
+};
 
 // const Gallery = () => {
 //   const [thumbSwipper, setThumbSwipper] = useState<any>(null);
@@ -102,52 +102,52 @@
 //     </section>
 //   );
 // };
-// export default Gallery;
-
-"use client";
-import React, { useState } from 'react';
-import { Navigation, Thumbs } from "swiper/modules";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
-import { gallery } from '@/data/navList';
-import Image from 'next/image';
-
-const Gallery = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
-  return (
-<div>
-<Swiper
-        spaceBetween={10}
-        navigation
-        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
-        modules={[Navigation, Thumbs]}
-      >
-       {gallery.map(({ id, src }) => (
-        <SwiperSlide key={id} className="">
-            <Image src={src} alt="thumbnail" width={250} height={400} className=" rounded-lg"/>
-          </SwiperSlide>
-       ))}
-      </Swiper>
-
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={5}
-        slidesPerView={3}
-        freeMode={true}
-        modules={[Navigation, Thumbs]}
-        watchSlidesProgress={true}
-        navigation={true}
-      >
-       {gallery.map(({ id, src }) => (
-           <SwiperSlide key={id} className="">
-     <Image src={src} alt="thumbnail" width={100} height={100} className=" rounded-lg"/>
-           </SwiperSlide>
-        ))}
-      </Swiper>
-</div>
-  );
-
-}
-
-
 export default Gallery;
+
+// "use client";
+// import React, { useState } from 'react';
+// import { Navigation, Thumbs } from "swiper/modules";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/swiper-bundle.css';
+// import { gallery } from '@/data/navList';
+// import Image from 'next/image';
+
+// const Gallery = () => {
+//   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+//   return (
+// <div>
+// <Swiper
+//         spaceBetween={10}
+//         navigation
+//         thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
+//         modules={[Navigation, Thumbs]}
+//       >
+//        {gallery.map(({ id, src }) => (
+//         <SwiperSlide key={id} className="">
+//             <Image src={src} alt="thumbnail" width={250} height={400} className=" rounded-lg"/>
+//           </SwiperSlide>
+//        ))}
+//       </Swiper>
+
+//       <Swiper
+//         onSwiper={setThumbsSwiper}
+//         spaceBetween={5}
+//         slidesPerView={3}
+//         freeMode={true}
+//         modules={[Navigation, Thumbs]}
+//         watchSlidesProgress={true}
+//         navigation={true}
+//       >
+//        {gallery.map(({ id, src }) => (
+//            <SwiperSlide key={id} className="">
+//      <Image src={src} alt="thumbnail" width={100} height={100} className=" rounded-lg"/>
+//            </SwiperSlide>
+//         ))}
+//       </Swiper>
+// </div>
+//   );
+
+// }
+
+
+// export default Gallery;
