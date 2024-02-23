@@ -136,6 +136,7 @@ const Gallery = () => {
         freeMode={true}
         modules={[Navigation, Thumbs]}
         watchSlidesProgress={true}
+        navigation={true}
       >
        {gallery.map(({ id, src }) => (
            <SwiperSlide key={id} className="">
