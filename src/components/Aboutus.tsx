@@ -20,7 +20,7 @@ const AboutUs = () => {
           </span>
         </h2>
         <div className="flex flex-wrap gap-5 md:text-xl border-l-2 border-red md:border-none lg:gap-0">
-          <div className="flex flex-wrap gap-5 pl-6 md:border-l-2 md:border-red ">
+          <div className="flex flex-wrap gap-5 pl-6 border-l-2 md:border-red ">
             <AnimatePresence>
               <motion.div
                 initial="hidden"

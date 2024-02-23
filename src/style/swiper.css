@@ -12,19 +12,25 @@
 
 
 }
-/* 
-.swiper-container {
-  overflow: visible;
-}
+ 
+
 
 .swiper-slide {
-  background-clip: padding-box;
-  border: 1px solid red;
-}  */
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* .swiper-slide-active  {
-  opacity: 1;
-}  */
+.mySwiper .swiper-slide {
+ opacity: 0.7;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity:  1;
+ }
 
 .swiper-button-next::after {
     color: transparent;

@@ -13,106 +13,50 @@ import "swiper/css/thumbs";
 import "@/style/swiper.css";
 
 const Gallery = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
-  const [currentGallery, setCurrentGallery] = useState("/gallery/img1.jpg");
-  const [slidesPerView, setSlidesPerView] = useState(3);
-  const [windowWidth, setWindowWidth] = useState<number>(0);
-
-  const currentImg = (id: number) => {
-    const activeSlide = gallery.find((img) => img.id === id);
-    const currentImg = activeSlide?.src || "/gallery/img1.jpg";
-    setCurrentGallery(currentImg);
-  };
-
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  const onClickPrev = () => {
-    thumbsSwiper.slidePrev();
-    const activeSlide = gallery.find(
-      (img) => img.id === thumbsSwiper.realIndex
-    );
-    const currentImg = activeSlide?.src || "/gallery/img1.jpg";
-    setCurrentGallery(currentImg);
-  };
-
-  const onClickNext = () => {
-    thumbsSwiper.slideNext();
-    const activeSlide = gallery.find(
-      (img) => img.id === thumbsSwiper.realIndex
-    );
-    const currentImg = activeSlide?.src || "/gallery/img1.jpg";
-    setCurrentGallery(currentImg);
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    if (windowWidth <= 480) {
-      setSlidesPerView(4);
-    }
-    if (windowWidth > 480 && windowWidth < 768) {
-      setSlidesPerView(5);
-    }
-    if (windowWidth >= 768 && windowWidth < 1100) {
-      setSlidesPerView(8);
-    }
-    if (windowWidth >= 1100) {
-      setSlidesPerView(10);
-    }
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [windowWidth, slidesPerView]);
+  const [thumbSwipper, setThumbSwipper] = useState<any>(null);
 
   return (
-    <section id="gallery" className="container pb-8 pt-4 md:pb-10 lg:pb-[60px] relative">
-       <CustomPrevButton onClick={onClickPrev} />
-           <CustomNextButton onClick={onClickNext} />
+    <section
+      id="gallery"
+      className="container pb-8 pt-4 md:pb-10 lg:pb-[60px] relative"
+    >
       <Swiper
-        onSwiper={(swiper) => setThumbsSwiper(swiper)}
-        onSlideChange={(swiper) => {
-          const activeSlide = gallery.find(
-            (img) => img.id === swiper.realIndex
-          );
-          const currentImg = activeSlide?.src || "/gallery/img1.jpg";
-          setCurrentGallery(currentImg);
-        }}
-        loop={true}
-        touchEventsTarget="wrapper"
         spaceBetween={10}
-        slidesPerView={slidesPerView}
-        navigation={{
-          prevEl: ".custom-prev-button",
-          nextEl: ".custom-next-button",
-        }}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper cursor-pointer mb-8"
+        navigation={true}
+        thumbs={thumbSwipper ? { swiper: thumbSwipper }: undefined}
+        modules={[Navigation, Thumbs, FreeMode]}
+        className=""
       >
         {gallery.map(({ id, src }) => (
-          <SwiperSlide key={id} className="" onClick={() => currentImg(id)}>
+          <SwiperSlide key={id} className="" >
             <Image
               src={src}
               alt="thumbnail"
-              width={90}
-              height={50}
-              className={`${currentGallery === src ? 'current__slider' : 'slider'} "w-[90] h-[50] md:h-[90px] lg:w-[110px] lg:h-[110px]"`}
+              width={400}
+              height={400}
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      <Image
-        src={currentGallery}
-        alt="thumbnail"
-        width={320}
-        height={250}
-        className="mx-auto md:w-[500px] sm:w-[350px]  md:h-[450px]  lg:w-[600px] lg:h-[550px]"
-      />
+      <Swiper
+      onSwiper={setThumbSwipper}
+      spaceBetween={10}
+      slidesPerView={4}
+      freeMode={true}
+      watchSlidesProgress={true}
+      modules={[FreeMode, Navigation, Thumbs]}
+      className="mySwiper">
+        {gallery.map(({ id, src }) => (
+          <SwiperSlide key={id} className="" >
+            <Image
+              src={src}
+              alt="thumbnail"
+              width={200}
+              height={200}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
