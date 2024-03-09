@@ -15,7 +15,7 @@ const BtnReadMore = () => {
             setReadMore((prev) => !prev);
           }}
         >
-          Дізнатись більше...
+          Читати більше...
         </button>
       )}
       <div className={`${readMore ? "" : "hidden"} md:block`}>

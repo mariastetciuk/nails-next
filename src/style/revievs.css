@@ -3,9 +3,7 @@
   @media screen and (min-width: 480px) {
    padding-left: 5px;
  }
- @media screen and (min-width: 768px) {
-   
- }
+
  @media screen and (min-width: 1100px) {
    padding-left: 20px;
  }
@@ -18,15 +16,12 @@
    }
    
    .swiper-button-next {
-       color: #660000;
-       z-index: 111;
-       right: -2px;
+      display: none;
        
      }
      
      .swiper-button-prev {
-       color: #660000;
-       left: 0;
+       display: none;
      }
 
      .img {
