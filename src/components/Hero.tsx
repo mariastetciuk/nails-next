@@ -10,7 +10,7 @@ const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
 const Hero = () => {
   return (
     <section className="relative bgImage w-screen scree text-white ">
-      <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:max-h-[700px] lg:pt-[140px] lg:max-h-[800px]">
+      <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:max-h-[700px] lg:pt-[180px] lg:max-h-[800px]">
         <h1
           className={`${cinzel.className} text-4xl  text-center mb-1 uppercase sm:text-5xl md:text-7xl md:mb-1  lg:text-8xl lg:mb-3`}
         >

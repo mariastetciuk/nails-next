@@ -21,7 +21,7 @@ const Revievs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
         >
-          <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[114px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[59px] md:text-[210px] md:mb-[100px] lg:text-[200px] lg:mb-0 lg:w-[560px] lg:pt-[150px]">
+          <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[114px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[59px] md:text-[210px] md:mb-[40px] lg:text-[200px] lg:mb-0 lg:w-[560px] lg:pt-[150px]">
             нам{" "}
             <motion.div
               viewport={{ once: true }}
@@ -47,7 +47,8 @@ const Revievs = () => {
           autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
           modules={[Navigation, Autoplay]}
-          className=" w-[250px] h-[300px] sm:w-[370px] sm:h-[400px] shadow-xl md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[550px]"
+          className="swiper__container  shadow-xl"
+
         >
           {revievs.map(({ id, src }) => (
             <SwiperSlide

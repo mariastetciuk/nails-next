@@ -35,7 +35,7 @@ const AboutUs = () => {
                   className="relative"
                 >
                   У нас майстрині з десятирічним досвідом.
-                  <span className="absolute -left-8 top-0 block w-4 h-4 rounded-full bg-red "></span>
+                  <span className="absolute -left-[34px] top-0 block w-4 h-4 rounded-full bg-red "></span>
                 </motion.p>
                 <motion.p
                   viewport={{ once: true }}
@@ -45,7 +45,7 @@ const AboutUs = () => {
                   className="relative"
                 >
                   Більше 100 кольорів гель-лаків, різноманітний декор.
-                  <span className="absolute -left-8 top-1 block w-4 h-4 rounded-full bg-red "></span>
+                  <span className="absolute -left-[34px] top-1 block w-4 h-4 rounded-full bg-red "></span>
                 </motion.p>
                 <motion.p
                   viewport={{ once: true }}
@@ -56,7 +56,7 @@ const AboutUs = () => {
                 >
                   Даємо гарантію на свою роботу, підбираємо носибельний матеріал
                   відповідно до ваших нігтів.
-                  <span className="absolute -left-8 top-1 block w-4 h-4 rounded-full bg-red "></span>
+                  <span className="absolute -left-[34px] top-1 block w-4 h-4 rounded-full bg-red "></span>
                 </motion.p>
               </motion.div>
             </AnimatePresence>
@@ -99,7 +99,7 @@ const AboutUs = () => {
               <motion.div
                 initial="hidden"
                 animate="visible"
-                className="flex flex-wrap gap-5 pl-6 border-l-2 border-red md:w-[280px]"
+                className="flex flex-wrap gap-5 pl-6 border-l-1 border-red md:w-[280px]"
               >
                 <motion.p
                   viewport={{ once: true }}

@@ -10,6 +10,17 @@
    
    
    }
+
+   .swiper__container {
+    width: 300px;
+    @media screen and (min-width: 480px) {
+      width: 400px;
+    }
+    
+    @media screen and (min-width: 768px) {
+      width: 550px;
+    }
+   }
    
    .swiper-slide {
      margin-right: 0;
