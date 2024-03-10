@@ -1,5 +1,7 @@
+'use client'
 import Image from "next/image";
 import BtnReadMore from "./btnComponents.tsx/BtnReadMore";
+import { motion } from 'framer-motion';
 
 const Team = () => {
   return (
@@ -12,11 +14,25 @@ const Team = () => {
      <BtnReadMore />
        <p className=" font-semibold lg:text-lg">Манікюр не розкіш, а прояв любові до себе.</p>
        </div>
-       <div className="text-center">
-      <Image src='/about/img-Ira.jpg' alt={"Iryna Mochkodan"} width={300} height={500} className="m-auto rounded-2xl mb-3 lg:w-[400px]"/>
+       <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+            <Image src='/about/img-Ira.jpg' alt={"Iryna Mochkodan"} width={300} height={500} className="m-auto rounded-2xl mb-3 lg:w-[400px]"/>
+          </motion.div>
+          <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="text-center"
+        >  
        <h3 className="font-semibold lg:text-lg">Ірина Мочкодан</h3>
        <p  className="w-[300px] lg:w-[400px] m-auto">Власниця студії, майстриня манікюру та педикюру</p>
-       </div>
+          </motion.div>
+      
        </div>
       </div>
     </section>

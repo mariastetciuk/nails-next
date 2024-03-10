@@ -47,8 +47,7 @@ const Revievs = () => {
           autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
           modules={[Navigation, Autoplay]}
-          className="swiper__container  shadow-xl"
-
+          className="swiper__container shadow-xl"
         >
           {revievs.map(({ id, src }) => (
             <SwiperSlide

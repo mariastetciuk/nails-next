@@ -14,14 +14,26 @@ const Gallery = () => {
       id="gallery"
       className=" pt-8"
     >
-        <motion.h2
-         viewport={{ once: true }}
-         initial={{ opacity: 0, y: 100 }}
-         whileInView={{ opacity: 1,  y: 0 }}
-         transition={{ ease: 'easeOut', duration: 1 }}
-         className="text-center uppercase text-red text-6xl mb-5 font-semibold text-opacity-70 md:mb-8 md:text-7xl lg:mb-10 lg:text-8xl">
-          галерея 
-      </motion.h2>
+       <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+          <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[64px] sm:leading-[33px] sm:text-[90px] text-opacity-70 mb-[30px] md:w-[400px] md:mx-auto md:leading-[59px] md:text-[130px] md:mb-[100px] lg:text-[200px] lg:mb-[90px] lg:w-[560px] lg:pt-[40px] lg:leading-[75px]">
+            фото{" "}
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: 300 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ ease: "easeOut", duration: 1 }}
+            >
+              <span className=" font-bold left-1/2 -translate-x-1/2 text-black text-[45px] sm:text-[50px] md:text-[85px] text-opacity-1 md:-bottom-[102px] lg:bottom-0 lg:text-[110px]">
+                робіт
+              </span>
+            </motion.div>
+          </h2>
+        </motion.div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

@@ -3,6 +3,7 @@
 import { price } from "@/data/navList";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import OrderService from "./OrderService";
 
 const Price = () => {
   return (
@@ -29,7 +30,7 @@ const Price = () => {
           </h2>
         </motion.div>
 
-        <ul className="flex flex-wrap gap-[80px] md:gap-x-[50px] md:gap-y-[80px] lg:gap-x-8 lg:gap-y-[90px]">
+        <ul className="flex flex-wrap gap-[80px] mb-8 md:gap-x-[50px] md:gap-y-[80px] lg:gap-x-8 lg:gap-y-[90px]">
           {price.map(({ id, title, src, description, price }) => (
             <li
               key={id}
@@ -50,6 +51,7 @@ const Price = () => {
             </li>
           ))}
         </ul>
+        <OrderService />
       </div>
     </section>
   );
