@@ -45,8 +45,8 @@
 
 
 }
-.dd {
-  color:#dbd6e1;
+.hidden {
+  display: none;
 }
 
 .img {

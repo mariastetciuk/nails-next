@@ -99,7 +99,7 @@ const AboutUs = () => {
               <motion.div
                 initial="hidden"
                 animate="visible"
-                className="flex flex-wrap gap-5 pl-6 lg:border-l-2 border-red md:w-[280px]"
+                className="flex flex-wrap gap-5 pl-6 md:border-l-2 border-red md:w-[280px]"
               >
                 <motion.p
                   viewport={{ once: true }}

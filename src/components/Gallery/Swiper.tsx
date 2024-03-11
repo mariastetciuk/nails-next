@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className=" pt-8"
+      className=" pt-8 sm:pt-[50px]"
     >
        <motion.div
           viewport={{ once: true }}
@@ -20,7 +20,7 @@ const Gallery = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
         >
-          <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[64px] sm:leading-[33px] sm:text-[90px] text-opacity-70 mb-[30px] md:w-[400px] md:mx-auto md:leading-[59px] md:text-[130px] md:mb-[100px] lg:text-[200px] lg:mb-[90px] lg:w-[560px] lg:pt-[40px] lg:leading-[75px]">
+          <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[64px] sm:leading-[33px] sm:text-[90px] text-opacity-70 mb-[30px] md:leading-[59px] md:text-[130px] md:mb-[40px] lg:text-[200px] lg:mb-[60px] lg:pt-[40px] lg:leading-[75px]">
             фото{" "}
             <motion.div
               viewport={{ once: true }}

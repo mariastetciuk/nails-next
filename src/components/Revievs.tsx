@@ -52,7 +52,7 @@ const Revievs = () => {
           {revievs.map(({ id, src }) => (
             <SwiperSlide
               key={id}
-              className=" relative transition-all duration-700 bg-white"
+              className="swiper__slide relative transition-all duration-700 bg-white"
             >
               <Image
                 src={src}

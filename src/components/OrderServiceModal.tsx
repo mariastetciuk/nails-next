@@ -68,7 +68,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
       className="fixed left-0 top-0 z-40 h-screen w-screen flex gap-0 justify-center items-center bg-black bg-opacity-40"
       onClick={handleOverlayClick}
     >
-      <div className="relative bg-white w-[300px] rounded-3xl py-10 px-5">
+      <div className="relative bg-white w-[300px] rounded-3xl py-10 px-5 md:w-[500px]">
         <button
           type="button"
           onClick={togleModal}
@@ -91,7 +91,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
             })}
             type="text"
             placeholder="Ім'я"
-            className="block w-[100%] border-2 text-black border-red rounded-xl px-5 py-2 placeholder:text-sm"
+            className="block w-[100%] border-2 text-black border-red rounded-xl px-5 py-2 placeholder:text-sm md:w-[300px]"
           />
           {errors.firstName && (
             <p className="  text-redlight text-[12px] w-[237px]">{errors.firstName.message}</p>
@@ -108,7 +108,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
               },
             })}
             type="text"
-            className="block w-[100%] border-2 border-red rounded-xl px-5 py-2 placeholder:text-sm"
+            className="block w-[100%] border-2 border-red rounded-xl px-5 py-2 placeholder:text-sm md:w-[300px]"
             placeholder="Телефон"
           />
           {errors.phone && (
@@ -116,7 +116,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
           )}
           </div>
           <button
-            className="text-white border-2 bg-red border-transparent font-medium px-5 py-2 w-[100%] rounded-3xl hover:text-red hover:bg-white hover:border-red"
+            className="text-white border-2 bg-red border-transparent font-medium px-5 py-2 w-[100%] rounded-3xl md:w-[200px] hover:text-red hover:bg-white hover:border-red"
             type="submit"
           >
             Записатися
