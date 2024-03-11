@@ -4,10 +4,11 @@ import { price } from "@/data/navList";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import OrderService from "./OrderService";
-import OrderServiseModal from "./OrderServiceModal";
 import { useState } from "react";
+import { useWidth } from "@/hook/useWidth";
 
 const Price = () => {
+  const currentWidth = useWidth()
  const [isPriceItem, setIsPriceItem] = useState(true)
   return (
     <section id="prise">
@@ -54,9 +55,8 @@ const Price = () => {
             </li>
           ))}
         </ul>
-        {isPriceItem &&  <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-10 mx-auto">Побачити більше</button>}
+        {isPriceItem && currentWidth < 1280 ? <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-10 mx-auto">Побачити більше</button> : ''}
         <OrderService />
-       
       </div>
     </section>
   );
