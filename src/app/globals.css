@@ -45,8 +45,12 @@
 
 
 }
-.hidden {
+.hidden__item {
   display: none;
+  @media screen and (min-width: 1280px ){
+    display: block;
+  }
+
 }
 
 .img {

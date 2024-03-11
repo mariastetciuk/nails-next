@@ -37,7 +37,7 @@ const Price = () => {
           {price.map(({ id, title, src, description, price }) => (
             <li
               key={id}
-              className={`${isPriceItem && id > 4 ? 'hidden' : ''} mx-auto px-3 relative pt-[80px] text-center bg-lightgrey rounded-3xl w-[250px] h-[300px] sm:w-[300px] sm:px-4 lg:w-[350px] lg:pt-[90px]`}
+              className={`${isPriceItem && id > 4 ? 'hidden__item' : ''} mx-auto px-3 relative pt-[80px] text-center bg-lightgrey rounded-3xl w-[250px] h-[300px] sm:w-[300px] sm:px-4 lg:w-[350px] lg:pt-[90px]`}
             >
               <Image
                 src={src}
