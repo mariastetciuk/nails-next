@@ -18,7 +18,7 @@ const Team = () => {
        </div>
        <motion.div
           viewport={{ once: true }}
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
         >
