@@ -27,7 +27,7 @@ const Revievs = () => {
               viewport={{ once: true }}
               initial={
                 currenrWidth < 1280
-                  ? { opacity: 0, x: 250 } : { opacity: 0, y: 150 }
+                  ? { opacity: 0, x: 350 } : { opacity: 0, y: 150 }
               }
               whileInView={currenrWidth < 1280 ? { opacity: 1, x: 0 } : { opacity: 1, y: 0 }}
               transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}

@@ -21,8 +21,8 @@ const Hero = () => {
         >
           cтудія манікюру та педикюру
         </h2>
-        <div className="mx-auto sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-10 ">
-<div className="flex flex-wrap gap-3 w-[300px] sm:w-[350px] sm:text-xl md:text-2xl md:w-[490px] md:gap-6 lg:w-[500px] lg:border-r-2 lg:border-white lg:border-opacity-25">
+        <div className="sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-10 ">
+<div className="flex flex-wrap mx-auto gap-3 max-w-[400px] sm:max-w-[450px] sm:text-xl md:max-w-[500px] md:text-2xl md:gap-6 lg:border-r-2 lg:border-white lg:border-opacity-25">
         <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg className="w-[26px] h-[26px] text-center fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-phone"></use>

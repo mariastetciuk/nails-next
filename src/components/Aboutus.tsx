@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <section id="about-us" className=" text-red  py-8 md:py-10 lg:py-[60px]">
       <div className="container">
-        <h2 className={` mb-8 text-2xl font-medium text-center md:text-4xl`}>
+        <h2 className={` mb-8 text-2xl font-medium text-center md:text-4xl md:mb-10`}>
           {" "}
           5 ПРИЧИН ОБРАТИ{" "}
           <span
@@ -19,13 +19,13 @@ const AboutUs = () => {
             Beautiful Nails
           </span>
         </h2>
-        <div className="flex flex-wrap gap-5 md:text-xl border-l-2 border-red md:border-none lg:gap-0">
-          <div className="flex flex-wrap gap-5 pl-6 border-l-2 md:border-red ">
+        <div className="flex flex-wrap gap-5 md:text-xl border-l-2 border-red md:border-none md:gap-[60px] lg:gap-0">
+          <div className="flex pl-6 border-l-2 md:border-red md:pb-10">
             <AnimatePresence>
               <motion.div
                 initial="hidden"
                 animate="visible"
-                className="flex flex-wrap gap-5 md:w-[350px]"
+                className="flex flex-wrap gap-5 md:max-w-[50%] "
               >
                 <motion.p
                   viewport={{ once: true }}
@@ -60,38 +60,38 @@ const AboutUs = () => {
                 </motion.p>
               </motion.div>
             </AnimatePresence>
-            <div className="hidden relative md:block md:w-[330px]">
+            <div className="hidden relative md:block md:w-[50%]">
               <Image
                 src={"/about/image1.jpg"}
                 alt={"image"}
                 width={150}
                 height={170}
-                className="absolute right-10 z-[1] bottom-10"
+                className="absolute left-[30%]  top-0"
               />
               <Image
                 src={"/about/image2.jpg"}
                 alt={"image"}
                 width={150}
                 height={170}
-                className="absolute left-5 top-5 "
+                className="absolute left-[10%] z-[2] top-[60px] "
               />
             </div>
           </div>
-          <div className="flex flex-wrap  gap-5  md:gap-[80px]  lg:gap-8">
-            <div className="hidden relative md:block md:w-[330px] md:h-[180px] lg:hidden">
+          <div className="flex gap-5 md:gap-[50px] md:pb-10 lg:gap-8">
+            <div className="hidden relative md:block md:w-[50%] md:h-[180px] lg:hidden">
               <Image
                 src={"/about/image3.jpg"}
                 alt={"image"}
                 width={150}
                 height={170}
-                className="absolute right-10 z-[1] -bottom-10"
+                className="absolute right-[40%] z-[1] -bottom-10"
               />
               <Image
                 src={"/about/image4.jpg"}
                 alt={"image"}
                 width={150}
                 height={170}
-                className="absolute left-5 top-0
+                className="absolute left-[50%] top-0
               "
               />
             </div>
@@ -99,7 +99,7 @@ const AboutUs = () => {
               <motion.div
                 initial="hidden"
                 animate="visible"
-                className="flex flex-wrap gap-5 pl-6 md:border-l-2 border-red md:w-[280px]"
+                className="flex flex-wrap gap-5 pl-6 md:border-l-2 border-red md:w-[50%]"
               >
                 <motion.p
                   viewport={{ once: true }}
