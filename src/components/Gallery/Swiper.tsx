@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className=" pt-8 sm:pt-[50px]"
+      className=" overflow-x-hidden pt-8 sm:pt-[50px]"
     >
        <motion.div
           viewport={{ once: true }}

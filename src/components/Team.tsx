@@ -7,7 +7,7 @@ import { useWidth } from "@/hook/useWidth";
 const Team = () => {
   const currentWidth = useWidth();
   return (
-    <section>
+    <section className="overflow-x-hidden">
       <div className="container py-8 md:py-10 lg:py-[60px] text-red ">
        <h2 className=" mb-4 text-4xl font-medium text-center md:text-5xl md:mb-6 lg:mb-14 lg:text-6xl">Про нас</h2>
        <div className="lg:flex lg:justify-between lg:gap-8">
@@ -18,16 +18,17 @@ const Team = () => {
        </div>
        <motion.div
           viewport={{ once: true }}
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
+          className=""
         >
             <Image src='/about/img-Ira.jpg' alt={"Iryna Mochkodan"} width={300} height={500} className="m-auto rounded-2xl mb-3 lg:w-[400px]"/>
           </motion.div>
             </div>
             <motion.div
           viewport={{ once: true }}
-          initial={{ opacity: 0, x: -200}}
+          initial={{ opacity: 0, x: -50}}
           whileInView={{ opacity: 1, x: currentWidth >= 1280 ? 350 : 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
           className="text-center"

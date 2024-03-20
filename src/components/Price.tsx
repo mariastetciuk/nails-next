@@ -11,8 +11,8 @@ const Price = () => {
   const currentWidth = useWidth()
  const [isPriceItem, setIsPriceItem] = useState(true)
   return (
-    <section id="prise">
-      <div className="container pb-[40px] pt-[50px] lg:py-[60px]">
+    <section id="prise" >
+      <div className="container pb-[40px] pt-[50px] lg:py-[60px] overflow-x-hidden">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -200 }}
@@ -34,11 +34,11 @@ const Price = () => {
           </h2>
         </motion.div>
 
-        <ul className="flex flex-wrap gap-[80px] mb-8 md:gap-x-[50px] md:gap-y-[80px] lg:gap-x-8 lg:gap-y-[90px]">
+        <ul className="flex flex-wrap gap-y-[80px] gap-x-0 g mb-8 md:gap-x-[50px] md:gap-y-[80px] lg:gap-x-8 lg:gap-y-[90px]">
           {price.map(({ id, title, src, description, price }) => (
             <li
               key={id}
-              className={`${isPriceItem && id > 4 ? 'hidden__item' : ''} mx-auto px-3 relative pt-[80px] text-center bg-lightgrey rounded-3xl w-[250px] h-[300px] sm:w-[300px] sm:px-4 lg:w-[350px] lg:pt-[90px]`}
+              className={`${isPriceItem && id > 4 ? 'hidden__item' : ''} mx-auto px-3 relative pt-[80px] text-center bg-lightgrey rounded-3xl w-[250px] h-[300px] sm:px-4 lg:w-[350px] lg:pt-[90px]`}
             >
               <Image
                 src={src}
@@ -55,7 +55,7 @@ const Price = () => {
             </li>
           ))}
         </ul>
-        {isPriceItem && currentWidth < 1280 ? <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-10 mx-auto">Побачити більше</button> : ''}
+        {isPriceItem && currentWidth < 1280 ? <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-10 mx-auto text-red font-medium md:text-xl">Побачити більше...</button> : ''}
         <OrderService />
       </div>
     </section>
