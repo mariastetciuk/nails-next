@@ -66,14 +66,14 @@ const AboutUs = () => {
                 alt={"image"}
                 width={150}
                 height={170}
-                className="absolute left-[30%]  top-0"
+                className="absolute left-[30%] top-0 lg:w-[220px] lg:h-[230px] lg:left-[45%] "
               />
               <Image
                 src={"/about/image2.jpg"}
                 alt={"image"}
                 width={150}
                 height={170}
-                className="absolute left-[10%] z-[2] top-[60px] "
+                className="absolute left-[10%] z-[2] top-[60px] lg:w-[220px] lg:h-[230px] lg:top-[120px] lg:left-[20%]"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ const AboutUs = () => {
                   className="relative"
                 >
                   Тривалість процедури - 90 хвилин.
-                  <span className="absolute -left-[34px] top-2 block w-4 h-4 rounded-full bg-red "></span>
+                  <span className="absolute -left-[34px] top-2 block w-4 h-4 rounded-full bg-red lg:top-3"></span>
                 </motion.p>
               </motion.div>
             </AnimatePresence>

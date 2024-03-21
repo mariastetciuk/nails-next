@@ -17,20 +17,17 @@ const Revievs = () => {
       <div className="container lg:flex gap-5">
         <motion.div
           viewport={{ once: true }}
-          initial={currenrWidth < 1280 ? { opacity: 0, x: -200 } : { opacity: 0, y: -150 }}
-          whileInView={currenrWidth < 1280 ? { opacity: 1, x: 0 } : { opacity: 1, y: 0}}
-          transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0}}
+          transition={{ ease: "easeOut", duration: 1, delay: 1 }}
         >
           <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[114px] sm:leading-[33px] sm:text-[130px] text-opacity-70 mb-10 md:leading-[59px] md:text-[210px] md:mb-[40px] lg:text-[200px] lg:mb-0 lg:w-[560px] lg:pt-[150px]">
             нам{" "}
             <motion.div
               viewport={{ once: true }}
-              initial={
-                currenrWidth < 1280
-                  ? { opacity: 0, x: 350 } : { opacity: 0, y: 150 }
-              }
-              whileInView={currenrWidth < 1280 ? { opacity: 1, x: 0 } : { opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}
+              initial={{ opacity: 0, x: 280 }} 
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ ease: "easeOut", duration: 1, delay: 1 }}
             >
               <span className=" font-bold left-1/2 -translate-x-1/2 text-black text-[45px] sm:text-[50px] md:text-[85px] text-opacity-1 md:-bottom-[102px] lg:bottom-0 lg:text-[85px]">
                 довіряють
