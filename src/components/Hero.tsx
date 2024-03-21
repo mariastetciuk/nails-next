@@ -9,7 +9,7 @@ const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
 
 const Hero = () => {
   return (
-    <section className="relative bgImage w-screen scree text-white ">
+    <section className="overflow-x-hidden relative bgImage w-screen scree text-white ">
       <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:max-h-[700px] lg:pt-[180px] lg:max-h-[800px]">
         <h1
           className={`${cinzel.className} text-4xl  text-center mb-1 uppercase sm:text-5xl md:text-7xl md:mb-1  lg:text-8xl lg:mb-3`}
@@ -21,8 +21,8 @@ const Hero = () => {
         >
           cтудія манікюру та педикюру
         </h2>
-        <div className="sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-10 ">
-<div className="flex flex-wrap mx-auto gap-3 max-w-[400px] sm:max-w-[450px] sm:text-xl md:max-w-[500px] md:text-2xl md:gap-6 lg:border-r-2 lg:border-white lg:border-opacity-25">
+        <div className="sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-5 lg:gap-10">
+<div className="flex flex-wrap mx-auto gap-3 max-w-[400px] sm:max-w-[450px] sm:text-xl md:max-w-[500px] md:text-2xl md:gap-6 lg:m-0 lg:border-r-2 lg:border-white lg:border-opacity-25">
         <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg className="w-[26px] h-[26px] text-center fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-phone"></use>
@@ -53,7 +53,7 @@ const Hero = () => {
 
        
       </div>
-    <div className="hidden lg:block bg-white bg-opacity-20 py-5 w-[400px] h-[260px] rounded-3xl">
+    <div className="hidden lg:block bg-white bg-opacity-20 py-5 w-[400px] h-[260px] rounded-3xl lg:w-[450px]">
    <OrderServise />
     </div>
   
@@ -68,8 +68,9 @@ const Hero = () => {
           </li>
           )}
         </ul>
+        <FixedBtn />
       </div>
-      <FixedBtn />
+     
     </section>
   );
 };

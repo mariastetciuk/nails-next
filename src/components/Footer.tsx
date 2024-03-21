@@ -5,9 +5,9 @@ import Link from "next/link";
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const Footer = () => {
   return (
-    <div className="bg-red">
+    <div className="overflow-x-hidden bg-red">
       <div className="container text-white py-8 md:py-10 lg:py-12 flex flex-wrap gap-5 text-center md:flex-nowrap md:gap-[90px] lg:gap-[150px] md:text-left">
-        <div className="w-[100%] md:w-[300px] lg:w-[350px] text-lg">
+        <div className="w-[100%] sm:max-w-[350px] text-lg">
           <p
             className={`${cinzel.className} text-3xl font-medium mb-3 md:text-4xl lg:mb-5`}
           >
@@ -36,7 +36,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="relative w-[100%] flex flex-wrap justify-center gap-5 mx-auto md:w-9 lg:text-lg">
+        <div className="w-[100%] relative  flex flex-wrap justify-center gap-5 mx-auto md:w-9 lg:text-lg">
           <ul className="flex gap-4 md:absolute md:flex-wrap md:right-0 md:w-14">
             {socialeList.map(({ link, href }) => (
               <li key={href}>

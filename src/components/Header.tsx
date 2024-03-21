@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={`absolute top-0 right-0 left-0 z-10 bg-transparent text-white md:py-[15px] lg:py-[50px]`}
+      className={`overflow-x-hidden absolute top-0 right-0 left-0 z-10 bg-transparent text-white md:py-[15px] lg:py-[50px]`}
     >
       <div className="relative container py-1 bg flex items-center gap-[150px] justify-center">
         <Link

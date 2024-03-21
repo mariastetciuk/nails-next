@@ -8,7 +8,7 @@ const cinzel = Cinzel({ subsets: ["latin"], weight: ["500"] });
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className=" text-red  py-8 md:py-10 lg:py-[60px]">
+    <section id="about-us" className="overflow-x-hidden text-red  py-8 md:py-10 lg:py-[60px]">
       <div className="container">
         <h2 className={` mb-8 text-2xl font-medium text-center md:text-4xl md:mb-10`}>
           {" "}
