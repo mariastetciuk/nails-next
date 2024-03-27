@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ua">
+    <html lang="uk">
       
       <body className={montserrat.className}>
         <header>

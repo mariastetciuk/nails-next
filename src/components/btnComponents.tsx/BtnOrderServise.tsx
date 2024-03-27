@@ -12,7 +12,7 @@ const BtnOrderService = ({style}: PropsBtnOrder) => {
 
     return (
     <>
-        <button className={style} onClick={togleModal}>Записатися</button>
+        <button type='button' aria-label="ordere servise" className={style} onClick={togleModal}>Записатися</button>
         {isShowModal && <OrderServiseModal togleModal={togleModal} />}
         </>
     )

@@ -42,7 +42,7 @@ const FixedBtn = () => {
         href={'tel: +380989505917'}
           className=" flex justify-center text-red items-center w-[55px] h-[55px] rounded-full border-4 border-red bg-white transition-all duration-300 md:w-[60px] md:h-[60px] lg:hidden hover:bg-red hover:text-white focus:bg-red focus:text-white"
         >
-           <svg className="w-[38px] h-[38px] fill-current text-current">
+           <svg aria-label="icon phone" className="w-[38px] h-[38px] fill-current text-current">
            <use href='/sprite.svg#icon-phone'></use>
                </svg>
         </Link>
@@ -54,6 +54,7 @@ const FixedBtn = () => {
         <div className="relative ">
           <button
             type="button"
+            aria-label="icon sociale network"
             onClick={togglePopUp}
             className="  flex justify-center text-red items-center w-[55px] h-[55px] rounded-full border-4 border-red  bg-white md:w-[60px] md:h-[60px] transition-all duration-300"
           >
@@ -62,7 +63,7 @@ const FixedBtn = () => {
             ) : (
               <Image
                 src={images[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
+                alt="icon sociale network"
                 width={40}
                 height={40}
                 color="red"
@@ -73,7 +74,7 @@ const FixedBtn = () => {
             <ul className="absolute -top-[245px] flex gap-2 flex-wrap justify-center items-center right-0 w-[50px] md:w-[60px]">
             {socialeDirect.map(({link, href}) => <li key={href}>
               <Link href={link}  rel="noopener noreferrer" target='_blank' className="block text-red rounded-full p-2 bg-white transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white">
-               <svg className="w-[38px] h-[38px] fill-current text-current">
+               <svg aria-label="icon sociale network" className="w-[38px] h-[38px] fill-current text-current">
            <use href={href}></use>
                </svg>
              </Link>

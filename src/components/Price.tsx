@@ -12,7 +12,7 @@ const Price = () => {
  const [isPriceItem, setIsPriceItem] = useState(true)
   return (
     <section id="prise" >
-      <div className="container overflow-x-hidden pb-[40px] pt-[50px] lg:py-[60px] overflow-x-hidden">
+      <div className="container overflow-x-hidden pb-[40px] pt-[50px] lg:py-[60px]">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -200 }}

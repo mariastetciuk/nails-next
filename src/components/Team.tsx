@@ -23,7 +23,7 @@ const Team = () => {
           transition={{ ease: "easeOut", duration: 1 }}
           className=""
         >
-            <Image src='/about/img-Ira.jpg' alt={"Iryna Mochkodan"} width={300} height={500} className="m-auto rounded-2xl mb-3 lg:w-[400px]"/>
+            <Image src='/about/img-Ira.jpg' loading='lazy' alt={"Iryna Mochkodan"} width={300} height={500} className="m-auto rounded-2xl mb-3 lg:w-[400px]"/>
           </motion.div>
             </div>
             <motion.div

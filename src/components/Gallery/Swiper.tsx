@@ -52,7 +52,7 @@ const Gallery = () => {
       >
         {gallery.map(({ id, src }) => (
           <SwiperSlide key={id} className="md:w-[400px] md:h-[400px] lg:h-[500px] lg:w-[500px]">
-            <Image src={src} alt="thumbnail" width={350} height={300} className=" rounded-xl md:w-[400px] md:h-[400px] lg:h-[500px] lg:w-[500px]"/>
+            <Image src={src} alt="thumbnail" loading='lazy' width={350} height={300} className=" rounded-xl md:w-[400px] md:h-[400px] lg:h-[500px] lg:w-[500px]"/>
           </SwiperSlide>
         ))}
       </Swiper>

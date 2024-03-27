@@ -48,8 +48,8 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
         <div className="flex gap-3 pl-6 items-center border-b border-red md:gap-10">
         <ul className="flex flex-col gap-5">
           {socialeList.map(({link, href}) => <li key={href}>
-            <Link href={link} rel="noopener noreferrer" target='_blank' className="block text-red rounded-full p-2 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white">
-             <svg className="w-[38px] h-[38px] fill-current text-current">
+            <Link href={link} rel="noopener noreferrer" target='_blank' className="block text-red rounded-full p-1 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white">
+             <svg aria-label="icon sociale network" className="w-[38px] h-[38px] fill-current text-current">
          <use href={href}></use>
              </svg>
            </Link>

@@ -52,6 +52,7 @@ const Revievs = () => {
             >
               <Image
                 src={src}
+                loading='lazy'
                 alt="reviev"
                 width={280}
                 height={320}

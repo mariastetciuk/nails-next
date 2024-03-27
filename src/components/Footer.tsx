@@ -29,10 +29,11 @@ const Footer = () => {
         <div className="mx-auto">
           <h3 className=" font-bold mb-3 md:text-left md:text-lg lg:mb-4">Меню</h3>
           <ul className="flex flex-wrap justify-center md:justify-start w-[80px] mx-auto gap-3 lg:gap-4">
-            {navLinks.map(({ href, title }) => (
-              <Link key={title} href={href} className="text-white md:text-lg border-b-2 border-transparent transition-all duration-300 hover:border-white  focus:border-white">
+            {navLinks.map(({ href, title }) => (<li key={title}>
+              <Link  href={href} className="text-white md:text-lg border-b-2 border-transparent transition-all duration-300 hover:border-white  focus:border-white">
                 {title}
               </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -46,7 +47,7 @@ const Footer = () => {
                   target="_blank"
                   className="block text-white rounded-full p-2 border-2 border-transparent transition-all duration-300 hover:border-white  focus:border-white"
                 >
-                  <svg className="w-[32px] h-[32px] fill-current text-current md:w-[38px] md:h-[38px]">
+                  <svg aria-label='icon sociale network' className="w-[32px] h-[32px] fill-current text-current md:w-[38px] md:h-[38px]">
                     <use href={href}></use>
                   </svg>
                 </Link>
