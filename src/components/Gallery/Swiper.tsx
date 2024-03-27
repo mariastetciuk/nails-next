@@ -18,7 +18,7 @@ const Gallery = () => {
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 1, delay:2 }}
+          transition={{ ease: "easeOut", duration: 1}}
         >
           <h2 className="relative text-center uppercase leading-[30px] font-extrabold text-red text-[64px] sm:leading-[33px] sm:text-[90px] text-opacity-70 mb-[30px] md:leading-[59px] md:text-[130px] md:mb-[40px] lg:text-[200px] lg:mb-[60px] lg:pt-[40px] lg:leading-[75px]">
             фото{" "}
@@ -26,7 +26,7 @@ const Gallery = () => {
               viewport={{ once: true }}
               initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ ease: "easeOut", duration: 1, delay:2 }}
+              transition={{ ease: "easeOut", duration: 1}}
             >
               <span className=" font-bold left-1/2 -translate-x-1/2 text-black text-[45px] sm:text-[50px] md:text-[85px] text-opacity-1 md:-bottom-[102px] lg:bottom-0 lg:text-[110px]">
                 робіт

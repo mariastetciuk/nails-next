@@ -62,18 +62,6 @@
   animation: spin 3s linear infinite;
 }
 
-
-
-.titleLeft {
-  animation: titleLeft 2s ease-in-out 0.1s forwards;
-}
-.linkRight {
-  animation: linkRight 2s ease-in-out 0.3s forwards;
-}
-.linkLeft {
-  animation: linkLeft 2s ease-in-out 0.3s forwards;
-}
-
 @keyframes spin {
   0% {
     transform: scale(1);
@@ -88,37 +76,4 @@
   }
 }
 
-@keyframes titleLeft {
-  0% {
-    /* transform: translateX(-30%); */
-    scale: 0.5;
-   opacity: 0;
-  }
-  100% {
-    /* transform: translateX(0); */
-    scale: 1;
-   opacity: 1;
-  }
-}
-@keyframes linkRight {
-  0% {
-    transform: translateX(100%);
-    
-  }
-  100% {
-    transform: translateX(0);
-    
-  }
-}
-
-@keyframes linkLeft {
-  0% {
-    transform: translateX(-100%);
-   
-  }
-  100% {
-    transform: translateX(0);
-    
-  }
-}
 
