@@ -55,7 +55,8 @@ const Price = () => {
             </li>
           ))}
         </ul>
-        {isPriceItem && currentWidth < 1280 ? <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-10 mx-auto text-red font-medium md:text-xl">Побачити більше...</button> : ''}
+        {isPriceItem && currentWidth < 1280 ? <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-5 mx-auto text-red font-medium md:text-xl">Побачити більше...</button> : ''}
+        <p className="text-lightred mb-5 font-medium text-center">* діє знижка на процедури до майстра-стажера - 50грн.</p>
         <OrderService />
       </div>
     </section>
