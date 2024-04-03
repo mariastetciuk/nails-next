@@ -23,12 +23,12 @@ const Hero = () => {
         </h2>
         <div className="sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-5 lg:gap-10">
 <div className="flex flex-wrap mx-auto gap-3 max-w-[400px] sm:max-w-[450px] sm:text-xl md:max-w-[500px] md:text-2xl md:gap-6 lg:m-0 lg:border-r-2 lg:border-white lg:border-opacity-25">
-        <Link href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
+        <a href={"tel: +380989505917"} className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg aria-label="icon phone" className="w-[26px] h-[26px] text-center fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-phone"></use>
           </svg>
           +38 (098) 9505917
-        </Link>
+        </a>
         <Link href={"#map"} className="flex gap-6 items-center text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg aria-label="icon map" className="w-[32px] h-[32px] fill-current text-current sm:w-[40px] sm:h[40px] md:w-[46px] md:h-[46px]">
             <use href="/sprite.svg#icon-location"></use>

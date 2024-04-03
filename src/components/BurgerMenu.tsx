@@ -35,7 +35,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
       className={` fixed left-0 top-0 z-30 h-screen w-screen bg-black bg-opacity-40`}
       onClick={handleOverlayClick}
     >
-      <div className="absolute right-0 top-0 w-[265px]  py-6 bg-white md:w-[350px]">
+      <div className="absolute right-0 top-0 w-[265px] h-screen py-12 bg-white md:w-[350px] md:h-[500px]">
      <button
           type="button"
           onClick={togleModal}
@@ -55,16 +55,16 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
            </Link>
           </li>)}
         </ul>
-        <ul className={`${zilla.className} text-red font-semibold text-lg px-6 md:px-8 md:text-2xl`}>
+        <ul className={`${zilla.className} text-red flex flex-wrap gap-3 font-semibold text-lg px-6 md:px-8 md:gap-0 md:text-2xl`}>
           {navLinks.map(({ title, href }) => (
-            <li key={title} className="my-1 py-2 md:my-3">
+            <li key={title} className="w-[100%] my-1 py-2">
               <Link href={href} onClick={togleModal} className="transition-all duration-300 hover:border-b-2 hover:border-red focus:border-b-2 focus:border-red">{title}</Link>
             </li>
           ))}
         </ul>
        
         </div >
-            <Link href={'tel: +380989505917'} className="block text-center text-2xl text-red py-3 font-semibold md:text-3xl md:py-5">+38 (098) 9505917</Link>
+            <a href={'tel: +380989505917'} className="block text-center text-2xl text-red py-8 font-semibold md:text-3xl md:py-5">+38 (098) 9505917</a>
     
       </div>
       
