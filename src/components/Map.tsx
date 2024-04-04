@@ -38,7 +38,7 @@ const Map = () => {
         </Marker>
         <LocateControl />
       </MapContainer>
-      <button type="button" aria-label="come back locale" className="absolute z-30 left-[9px] pointer-events-none top-[80px] px-1  bg-white border-gray-400 border-2 text-black ">
+      <button type="button" aria-label="come back locale" className="absolute z-[1] left-[9px] pointer-events-none top-[80px] px-1  bg-white border-gray-400 border-2 text-black ">
       <svg aria-label="icon location" className="w-[21px] h-[32px] fill-current text-current ">
          <use href={"/sprite.svg#icon-location"}></use>
              </svg>

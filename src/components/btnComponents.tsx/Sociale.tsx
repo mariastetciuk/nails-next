@@ -36,16 +36,16 @@ const FixedBtn = () => {
   }, [currentImageIndex, images.length]);
 
   return (
-    <div className=" fixed left-0 right-0 bottom-7 z-[9999]">
+    <div className=" fixed left-0 right-0 bottom-7 z-[2]">
       <div className="container relative flex items-center mx-auto justify-between px-5 lg:px-[20px] bg:px-[50px]">
-        <Link
+        <a
         href={'tel: +380989505917'}
           className=" flex justify-center text-red items-center w-[55px] h-[55px] rounded-full border-4 border-red bg-white transition-all duration-300 md:w-[60px] md:h-[60px] lg:hidden hover:bg-red hover:text-white focus:bg-red focus:text-white"
         >
            <svg aria-label="icon phone" className="w-[38px] h-[38px] fill-current text-current">
            <use href='/sprite.svg#icon-phone'></use>
                </svg>
-        </Link>
+        </a>
     
         <BtnOrderCall />
 <BtnOrderService style="absolute left-1/2 -translate-x-1/2 inline-block text-center bg-white text-red py-1 text-lg rounded-3xl font-semibold px-3 border-4 border-red md:text-xl md:py-2 md:px-4 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white lg:hidden" />
