@@ -9,7 +9,7 @@ const BtnReadMore = () => {
     <>
       {!readMore && (
         <button
-          className="mb-5 cursor-pointer pr-[80px] md:hidden"
+          className="mb-5 block mx-auto cursor-pointer border-b border-b-red  md:hidden"
           type="button"
           onClick={() => {
             setReadMore((prev) => !prev);
