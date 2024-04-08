@@ -27,7 +27,7 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
-      const response = await fetch("https://formspree.io/f/xvojnpdv", {
+      const response = await fetch("https://formspree.io/f/xzblqpwe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,6 @@ const OrderServiseModal = ({ togleModal }: CloseModal) => {
       if (response.ok) {
         setIsSuccessfull(true);
       } else {
-        // Handle form submission error
         setIsError(true);
         console.error("Form submission error");
       }
