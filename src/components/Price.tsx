@@ -56,7 +56,8 @@ const Price = () => {
           ))}
         </ul>
         {isPriceItem && currentWidth < 1280 ? <button type='button' onClick={()=>{setIsPriceItem(false)}} className="block mb-5 mx-auto text-red font-medium md:text-xl">Побачити більше...</button> : ''}
-        <p className="text-lightred mb-5 font-medium text-center">* діє знижка на процедури до майстра-стажера - 50грн.</p>
+        <p className="text-red text-xs text-center mb-3">* надаємо знижку 10% на послуги манікюру при записі до майстра - стажера.</p>
+        <p className="text-red text-xs mb-5 text-center">** час виконання процедури манікюру майстром - стажером - 130 хв. Дизайн у подарунок.</p>
         <OrderService />
       </div>
     </section>

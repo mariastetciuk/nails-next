@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import "@/style/revievs.css";
 import { useWidth } from "@/hook/useWidth";
+import Link from "next/link";
 
 const Revievs = () => {
   const currenrWidth = useWidth();
@@ -14,7 +15,8 @@ const Revievs = () => {
       id="revievs"
       className="overflow-x-hidden text-red pb-8 pt-[64px] md:pb-10 md:pt-[94px] lg:pb-[60px] lg:pt-[60px]"
     >
-      <div className="container lg:flex gap-5">
+      <div className="container">
+      <div className=" lg:flex gap-5">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -200 }}
@@ -43,12 +45,12 @@ const Revievs = () => {
           autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
           modules={[Navigation, Autoplay]}
-          className="swiper__container shadow-xl"
+          className="swiper__container shadow-xl mb-10"
         >
           {revievs.map(({ id, src }) => (
             <SwiperSlide
               key={id}
-              className="swiper__slide relative transition-all duration-700 bg-white"
+              className="swiper__slide relative transition-all duration-700 bg-white "
             >
               <Image
                 src={src}
@@ -61,6 +63,12 @@ const Revievs = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className="flex flex-wrap gap-3 w-[500px] ml-[650px] lg:flex-nowrap lg:gap-5 lg:w-[400px]">
+     
+        <Link href={'https://maps.app.goo.gl/h15DVJTr8CbYPgk28'} rel="noopener noreferrer" target='_blank' className="shadow-xl text-center mx-auto img__btn block w-[300px] p-2 bg-opacity-50 rounded-sm uppercase text-red text-opacity-70 font-medium border-2 border-red border-opacity-50 hover:bg-red hover:bg-opacity-50 hover:text-white hover:text-opacity-100 hover:border-transparent focus:bg-red focus:bg-opacity-50 focus:text-white focus:border-transparent focus:text-opacity-100 ">всі відгуки</Link>
+        <Link href={'https://g.page/r/CebA-uEqZl5UEAI/review'} rel="noopener noreferrer" target='_blank' className="shadow-xl text-center mx-auto img__btn block w-[300px] p-2 bg-opacity-50 rounded-sm uppercase text-white font-medium bg-red  hover:bg-white hover:text-red hover:text-opacity-70 hover:border-2 hover:border-red hover:border-opacity-50  focus:bg-white focus:text-red focus:text-opacity-70 focus:border-opacity-50 focus:border-2 focus:border-red">залишити відгук</Link>
+      </div>
       </div>
     </section>
   );
