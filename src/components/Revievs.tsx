@@ -64,7 +64,7 @@ const Revievs = () => {
           ))}
         </Swiper>
       </div>
-      <div className="flex flex-wrap gap-3 w-[500px] ml-[650px] lg:flex-nowrap lg:gap-5 lg:w-[400px]">
+      <div className="flex flex-wrap gap-3 mx-auto max-w-[500px] lg:ml-[650px] lg:flex-nowrap lg:gap-5 lg:max-w-[400px] bg:ml-[700px]">
      
         <Link href={'https://maps.app.goo.gl/h15DVJTr8CbYPgk28'} rel="noopener noreferrer" target='_blank' className="shadow-xl text-center mx-auto img__btn block w-[300px] p-2 bg-opacity-50 rounded-sm uppercase text-red text-opacity-70 font-medium border-2 border-red border-opacity-50 hover:bg-red hover:bg-opacity-50 hover:text-white hover:text-opacity-100 hover:border-transparent focus:bg-red focus:bg-opacity-50 focus:text-white focus:border-transparent focus:text-opacity-100 ">всі відгуки</Link>
         <Link href={'https://g.page/r/CebA-uEqZl5UEAI/review'} rel="noopener noreferrer" target='_blank' className="shadow-xl text-center mx-auto img__btn block w-[300px] p-2 bg-opacity-50 rounded-sm uppercase text-white font-medium bg-red  hover:bg-white hover:text-red hover:text-opacity-70 hover:border-2 hover:border-red hover:border-opacity-50  focus:bg-white focus:text-red focus:text-opacity-70 focus:border-opacity-50 focus:border-2 focus:border-red">залишити відгук</Link>
