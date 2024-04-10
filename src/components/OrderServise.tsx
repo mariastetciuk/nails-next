@@ -21,7 +21,7 @@ const OrderServise = () => {
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
-      const response = await fetch("https://formspree.io/f/xvojnpdv", {
+      const response = await fetch("https://formspree.io/f/meqyplev", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -60,14 +60,14 @@ const OrderServise = () => {
               value: 2,
               message: "Ім'я має містити не менше як 2 букви",
             },
-            required: { value: true, message: "Вкажіть своє ім'я" },
+            required: { value: true, message: "Вкажіть своє ім'я" }
           })}
           type="text"
           placeholder="Ім'я"
-          className="block border-b-2 w-[300px] border-white bg-transparent text-white pt-2 placeholder:text-xl placeholder:text-white placeholder:font-medium placeholder:text-opacity-40"
+          className="block border-b-2 w-[300px] border-white bg-transparent text-white pt-2 px-2 placeholder:text-xl placeholder:text-white placeholder:font-medium placeholder:text-opacity-40"
         />
         {errors.firstName && (
-          <p className="absolute top-[40px] left-[53px] text-red font-medium text-[14px] w-[350px]">
+          <p className="absolute top-[40px] left-[73px] text-red font-medium text-[14px] w-[350px]">
             {errors.firstName.message}
           </p>
         )}
@@ -89,11 +89,11 @@ const OrderServise = () => {
               },
             })}
             type="text"
-            className="block mb-2 border-b-2 w-[300px] text-white border-white bg-transparent pt-2 placeholder:text-xl placeholder:text-white placeholder:font-medium placeholder:text-opacity-40"
+            className="block mb-2 border-b-2 w-[300px] text-white border-white bg-transparent pt-2 px-2 placeholder:text-xl placeholder:text-white placeholder:font-medium placeholder:text-opacity-40"
             placeholder="Телефон"
           />
           {errors.phone && (
-            <p className="absolute left-[53px] bottom-[60px] text-red font-medium text-[14px] w-[350px]">
+            <p className="absolute left-[73px] bottom-[60px] text-red font-medium text-[14px] w-[350px]">
               {errors.phone.message}
             </p>
           )}
