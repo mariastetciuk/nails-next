@@ -8,7 +8,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Beautiful Nails',
-  description: 'Manicure and pedicure Ivano-Frankivsk',
+  description: 'Манікюр та педикюр Івано-Франківськ',
   icons: {
     icon: {
       url: '/favicon.png',
