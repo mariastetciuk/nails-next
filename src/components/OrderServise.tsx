@@ -32,21 +32,15 @@ const OrderServise = () => {
       if (response.ok) {
         reset();
         setIsSuccessfull(true)
-       
-        // Handle successful form submission
         console.log("Form submitted successfully!");
       } else {
         setisError(true)
-        // Handle form submission error
         console.error("Form submission error");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
     }
   };
-
-
-
   return (
     <>
       <h2 className="text-2xl uppercase text-center mb-3">швидкий запис</h2>
@@ -71,8 +65,6 @@ const OrderServise = () => {
             {errors.firstName.message}
           </p>
         )}
-
-     
           <input
             {...register("phone", {
               minLength: {
@@ -97,7 +89,6 @@ const OrderServise = () => {
               {errors.phone.message}
             </p>
           )}
-    
         <button
           className=" inline-block text-white border-2 bg-red border-transparent text-xl font-medium px-9 py-3 rounded-3xl hover:text-red hover:bg-white hover:border-red"
           type="submit"
