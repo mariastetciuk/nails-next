@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Beautiful Nails',
+  title: 'МАНІКЮР | ПЕДИКЮР | Онлайн запис на манікюр. Івано-Франківськ - Студія манікюру та педикюру Beautiful Nails',
   description: 'Манікюр та педикюр Івано-Франківськ',
   icons: {
     icon: {
