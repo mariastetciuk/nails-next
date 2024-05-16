@@ -43,7 +43,7 @@ const OrderServise = () => {
   };
   return (
     <>
-      <h2 className="text-2xl uppercase text-center mb-3">швидкий запис</h2>
+      <h2 className="text-2xl uppercase text-center mb-3">потрібна консультація</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="relative flex text-black flex-wrap gap-4 justify-center"
@@ -93,7 +93,7 @@ const OrderServise = () => {
           className=" inline-block text-white border-2 bg-red border-transparent text-xl font-medium px-9 py-3 rounded-3xl hover:text-red hover:bg-white hover:border-red"
           type="submit"
         >
-          Записатися
+          Замовити дзвінок
         </button>
       </form>
       {isSuccessfull && <ResponseModal closeModal={closeModal} response={response.successfull}/>}
