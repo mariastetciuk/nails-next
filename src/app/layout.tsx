@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <Head>
-        <link rel='canonical' href='https://www.beautifulnails.if.ua/' />
+        <link rel='canonical' href='https://beautifulnails.if.ua/' />
       </Head>
       <body className={montserrat.className}>
         <header>
