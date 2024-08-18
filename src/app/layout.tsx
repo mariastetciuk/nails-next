@@ -8,7 +8,7 @@ import Head from 'next/head'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Манікюр Івано-Франківськ - пошук Google',
+  title: ' Beautiful Nails. Студія манікюру та педикюру',
   description: 'МАНІКЮР | ПЕДИКЮР | Онлайн запис на манікюр. Івано-Франківськ - Студія манікюру та педикюру Beautiful Nails',
   icons: {
     icon: {
