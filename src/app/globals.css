@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 
 .bgImage {
   background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero4.jpg');
@@ -20,7 +24,6 @@
     /* background-image: linear-gradient(rgba(71, 73, 81, 0.6), rgba(71, 73, 81, 0.6)), url('/hero5.jpg'); */
   }
 }
-
 
 .container {
   max-width: 100vw;

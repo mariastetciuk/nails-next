@@ -29,7 +29,7 @@ const Team = () => {
             <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -50}}
-          whileInView={{ opacity: 1, x: currentWidth >= 1280 ? 350 : 0 }}
+          whileInView={{ opacity: 1, x: currentWidth >= 1280 ? 410 : 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
           className="text-center"
         >  
