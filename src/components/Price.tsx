@@ -47,8 +47,8 @@ const Price = () => {
                 height={130}
                 className=" absolute left-1/2 -translate-x-1/2 -top-[60px] border-4 rounded-full border-white"
               />
-              <h2 className="md:text-lg font-medium mb-2 md:mb-3">{title}</h2>
-              <p className=" text-sm md:text-base">{description}</p>
+              <h2 className="md:text-lg font-medium mb-2 lg:mb-3">{title}</h2>
+              <p className=" text-sm lg:text-base">{description}</p>
               <p className="absolute left-1/2 -translate-x-1/2 bottom-4 border-2 border-red mx-auto bg-white w-[150px] py-2 rounded-2xl">
                 {price}
               </p>
