@@ -85,21 +85,21 @@ export const response = {
 };
 
 export const gallery: Array<Gallery> = [
-  { id: 0, src: "/gallery/img1.jpg" },
-  { id: 1, src: "/gallery/img2.jpg" },
-  { id: 2, src: "/gallery/img3.jpg" },
-  { id: 3, src: "/gallery/img4.jpg" },
-  { id: 4, src: "/gallery/img5.jpg" },
-  { id: 5, src: "/gallery/img6.jpg" },
-  { id: 6, src: "/gallery/img7.jpg" },
-  { id: 7, src: "/gallery/img8.jpg" },
-  { id: 8, src: "/gallery/img9.jpg" },
-  { id: 9, src: "/gallery/img10.jpg" },
-  { id: 10, src: "/gallery/img11.jpg" },
-  { id: 11, src: "/gallery/img12.jpg" },
-  { id: 12, src: "/gallery/img13.jpg" },
-  { id: 13, src: "/gallery/img14.jpg" },
-  { id: 14, src: "/gallery/img15.jpg" },
+  { id: 1, src: "/gallery/2_img.jpg" },
+  { id: 2, src: "/gallery/3_img.jpg" },
+  { id: 3, src: "/gallery/4_img.jpg" },
+  { id: 4, src: "/gallery/5_img.jpg" },
+  { id: 5, src: "/gallery/6_img.jpg" },
+  { id: 6, src: "/gallery/7_img.jpg" },
+  { id: 7, src: "/gallery/8_img.jpg" },
+  { id: 8, src: "/gallery/9_img.jpg" },
+  { id: 9, src: "/gallery/10_img.jpg" },
+  { id: 10, src: "/gallery/11_img.jpg" },
+  { id: 11, src: "/gallery/12_img.jpg" },
+  { id: 12, src: "/gallery/13_img.jpg" },
+  { id: 13, src: "/gallery/14_img.jpg" },
+  { id: 0, src: "/gallery/15_img.jpg" },
+  { id: 14, src: "/gallery/1_img.jpg" },
 ];
 
 export const revievs: Array<Reviev> = [

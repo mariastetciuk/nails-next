@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="text-white text-center border-t-2 border-white pt-6 pb-[80px] md:text-lg lg:text-xl lg:py-6">
         <p className="inline">Розробка</p>
        
-        <Link href={'https://t.me/Mariia_Stetsiuk'} rel="noopener noreferrer" target='_blank' className="mx-2 border-b-2 border-white ">Mariia Stetsiuk</Link>
+        <a href={'https://t.me/Mariia_Stetsiuk'} rel="noopener noreferrer" target='_blank' className=" cursor-pointer mx-2 border-b-2 border-white pt-3">Mariia Stetsiuk</a>
         2023. 
         <p className="md:inline md:ml-2">© Усі права захищені</p>
       </div>
