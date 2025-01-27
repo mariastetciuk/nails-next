@@ -47,7 +47,7 @@ export const socialeList: Array<SocialLinks> = [
     href: "/sprite.svg#icon-instagram",
   },
   {
-    link: "https://www.facebook.com/beautifulnails.ukraine",
+    link: "https://www.facebook.com/beautifulnails.if",
     href: "/sprite.svg#icon-facebook",
   },
   {

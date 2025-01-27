@@ -4,7 +4,6 @@ import Image from "next/image";
 import CloseIcon from "../icons/CloseIcon";
 import Link from "next/link";
 import { socialeDirect } from "@/data/navList";
-import BtnOrderService from "./BtnOrderServise";
 import BtnOrderCall from "./BtnOrderCall";
 
 const FixedBtn = () => {
