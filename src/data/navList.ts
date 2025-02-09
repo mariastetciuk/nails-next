@@ -38,7 +38,7 @@ export const navLinks: Array<NavLinks> = [
   { title: "Ціни", href: "#prise" },
   { title: "Галерея", href: "#gallery" },
   { title: "Відгуки", href: "#revievs" },
-  { title: "Контакти", href: "#map" },
+  { title: "Контакти", href: "#footer" },
 ];
 
 export const socialeList: Array<SocialLinks> = [

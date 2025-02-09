@@ -6,6 +6,8 @@ import OrderServise from "./OrderServise";
 
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
+const address = "м. Івано-Франківськ, вул. Леся Курбаса 4/4";
+const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
 const Hero = () => {
   return (
@@ -29,17 +31,17 @@ const Hero = () => {
           </svg>
           +38 (098) 9505917
         </a>
-        <Link href={"#map"} className="flex gap-6 items-center text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
+        <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="flex gap-6 items-center text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red">
           <svg aria-label="icon map" className="w-[32px] h-[32px] fill-current text-current sm:w-[40px] sm:h[40px] md:w-[46px] md:h-[46px]">
             <use href="/sprite.svg#icon-location"></use>
           </svg>
-          м. Івано-Франківськ, вул. Пасічна, 2а (0 поверх)
+          м. Івано-Франківськ, вул. Леся Курбаса 4/4
         </Link>
         <div className="flex gap-6 text-white md:gap-8">
           <svg aria-label="icon clock" className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]">
             <use href="/sprite.svg#icon-clock"></use>
           </svg>
-          <p>Пн-Нд: 9:00 - 20:00</p>
+          <p>Вт-Нд: 10:30 - 20:00</p>
         </div>
         <Link
           href={"mailto:beautifulnails.if@gmail.com"}

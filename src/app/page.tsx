@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import Hero from '@/components/Hero'
 import AboutUs from '@/components/Aboutus'
 import Gallery from '@/components/Gallery/Swiper'
@@ -7,9 +7,9 @@ import Price from '@/components/Price'
 import Team from '@/components/Team'
 
 
-const MapComponent = dynamic(() => import('../components/Map'), {
-  ssr: false,
-});
+// const MapComponent = dynamic(() => import('../components/Map'), {
+//   ssr: false,
+// });
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
     <AboutUs />
     <Revievs />
     <Team />
-    <MapComponent />
+    {/* <MapComponent /> */}
     </main>
   )
 }

@@ -3,9 +3,12 @@ import { navLinks, socialeList } from "@/data/navList";
 import Link from "next/link";
 
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
+const address = "м. Івано-Франківськ, вул. Леся Курбаса 4/4";
+const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+
 const Footer = () => {
   return (
-    <div className="overflow-x-hidden bg-red">
+    <div id="footer" className="overflow-x-hidden bg-red">
       <div className="container text-white py-8 md:py-10 lg:py-12 flex flex-wrap gap-5 text-center md:flex-nowrap md:gap-[90px] lg:gap-[150px] md:text-left">
         <div className="w-[100%] sm:max-w-[350px] text-lg">
           <p
@@ -16,15 +19,14 @@ const Footer = () => {
 
           <div>
             <p className="font-bold mb-3 text-center md:text-left lg:mb-4 lg:w-[300px] lg:text-lg">Чекаємо Вас за адресою:</p>
-
-            <p className="mb-4 md:mb-5">
-              вул. Пасічна, 2а (0 поверх),{" "}
-              <span className="block">м. Івано-Франківськ</span>
-            </p>
+            <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="block mb-4 md:mb-5 items-center text-white transition-all duration-300 hover:underline focus:underline">
+          вул. Леся Курбаса 4/4,
+          <span className="block">м. Івано-Франківськ</span>
+        </Link>
           </div>
           <p className="font-bold mb-3 text-center md:text-left lg:mb-4 lg:w-[300px] lg:text-lg">Графік роботи:</p>
-          <p className="mb-2">Понеділок - Неділя</p>
-          <p>9:00 - 20:00</p>
+          <p className="mb-2">Вівторок - Неділя</p>
+          <p>10:30 - 20:00</p>
         </div>
         <div className="mx-auto">
           <h3 className=" font-bold mb-3 md:text-left md:text-lg lg:mb-4">Меню</h3>
