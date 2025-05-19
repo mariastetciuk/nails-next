@@ -64,7 +64,7 @@ export const socialeDirect: Array<SocialLinks> = [
   },
   {
     link: "https://m.me/beautifulnails.ukraine",
-    href: "/sprite.svg#icon-facebook-messenger",
+    href: "/sprite.svg#icon-messenger",
   },
   {
     link: "https://t.me/beautifulnails_ukraine",

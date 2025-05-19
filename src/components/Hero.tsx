@@ -54,7 +54,7 @@ const Hero = () => {
                 aria-label="icon clock"
                 className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]"
               >
-                <use href="/sprite.svg#icon-clock"></use>
+                <use href="/sprite.svg#icon-time"></use>
               </svg>
               <p>Вт-Нд: 10:30 - 20:00</p>
             </div>
