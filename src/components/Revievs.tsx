@@ -31,7 +31,7 @@ const Revievs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeOut", duration: 1, delay: 1 }}
             >
-              <span className=" font-bold left-1/2 -translate-x-1/2 text-black text-[45px] sm:text-[50px] md:text-[85px] text-opacity-1 md:-bottom-[102px] lg:bottom-0 lg:text-[85px]">
+              <span className=" text-center font-bold left-1/2 -translate-x-1/2 text-black text-[45px] sm:text-[50px] md:text-[85px] text-opacity-1 md:-bottom-[102px] lg:bottom-0 lg:text-[85px]">
                 довіряють
               </span>
             </motion.div>
