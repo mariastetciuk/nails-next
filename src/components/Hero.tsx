@@ -2,7 +2,6 @@ import FixedBtn from "./btnComponents.tsx/Sociale";
 import Link from "next/link";
 import { Cinzel, Roboto_Serif } from "next/font/google";
 import { socialeList } from "@/data/navList";
-import OrderServise from "./OrderServise";
 
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400"] });
 const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
@@ -10,7 +9,7 @@ const vollkorn = Roboto_Serif({ subsets: ["latin"], weight: ["400"] });
 const Hero = () => {
   return (
     <section className="overflow-x-hidden relative bgImage w-screen scree text-white ">
-      <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:max-h-[700px] lg:pt-[180px] lg:max-h-[800px]">
+      <div className="container max-h-[550px] pt-[110px] md:pt-[140px] md:max-h-[700px] lg:pt-[180px] lg:max-h-[900px]">
         <h1
           className={`${cinzel.className} text-4xl  text-center mb-1 uppercase sm:text-5xl md:text-7xl md:mb-1  lg:text-8xl lg:mb-3`}
         >
@@ -22,9 +21,9 @@ const Hero = () => {
           cтудія манікюру та педикюру
         </h2>
         <div className="sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-5 lg:gap-10">
-          <div className="flex flex-wrap mx-auto gap-3 max-w-[400px] sm:max-w-[450px] sm:text-xl md:max-w-[500px] md:text-2xl md:gap-6 lg:m-0 lg:border-r-2 lg:border-white lg:border-opacity-25">
+          <div className="flex flex-wrap mx-auto  gap-3 max-w-[280px] sm:text-l md:max-w-[350px] md:text-xl md:gap-5 lg:m-0 lg:text-2xl lg:max-w-[370px]" >
             <a
-              href={"tel: +380989505917"}
+              href={"tel: +380935893133"}
               className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red"
             >
               <svg
@@ -33,31 +32,22 @@ const Hero = () => {
               >
                 <use href="/sprite.svg#icon-phone"></use>
               </svg>
-              +38 (098) 9505917
+              +38 (093) 5893133 
             </a>
             <Link
-              href="https://www.google.com/maps/place/Beautiful+Nails.+%D0%A1%D1%82%D1%83%D0%B4%D1%96%D1%8F+%D0%BC%D0%B0%D0%BD%D1%96%D0%BA%D1%8E%D1%80%D1%83+%D1%82%D0%B0+%D0%BF%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%D1%83/@48.9210646,24.7125106,17z/data=!4m14!1m7!3m6!1s0x4730c184b9d02d8b:0x545e662ae1fac0e6!2zQmVhdXRpZnVsIE5haWxzLiDQodGC0YPQtNGW0Y8g0LzQsNC90ZbQutGO0YDRgyDRgtCwINC_0LXQtNC40LrRjtGA0YM!8m2!3d48.9210646!4d24.7125106!16s%2Fg%2F11vf3qw1ry!3m5!1s0x4730c184b9d02d8b:0x545e662ae1fac0e6!8m2!3d48.9210646!4d24.7125106!16s%2Fg%2F11vf3qw1ry?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/Beautiful+Nails.+%D0%A1%D1%82%D1%83%D0%B4%D1%96%D1%8F+%D0%BC%D0%B0%D0%BD%D1%96%D0%BA%D1%8E%D1%80%D1%83+%D1%82%D0%B0+%D0%BF%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%D1%83/@48.9161174,24.7327395,17z/data=!3m1!4b1!4m6!3m5!1s0x4730c184b9d02d8b:0x545e662ae1fac0e6!8m2!3d48.9161174!4d24.7327395!16s%2Fg%2F11vf3qw1ry?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="flex gap-6 items-center text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red"
             >
               <svg
                 aria-label="icon map"
-                className="w-[32px] h-[32px] fill-current text-current sm:w-[40px] sm:h[40px] md:w-[46px] md:h-[46px]"
+                className=" fill-current text-current w-[40px] h-[40px] md:w-[60px] md:h-[60px] "
               >
                 <use href="/sprite.svg#icon-location"></use>
               </svg>
-              м. Івано-Франківськ, вул. Леся Курбаса 4/4
+              вул. Незалежності 148 А, м. Івано-Франківськ, 
             </Link>
-            <div className="flex gap-6 text-white md:gap-8">
-              <svg
-                aria-label="icon clock"
-                className="w-[26px] h-[26px] fill-current text-current md:w-[32px] md:h-[32px]"
-              >
-                <use href="/sprite.svg#icon-time"></use>
-              </svg>
-              <p>Вт-Нд: 10:30 - 20:00</p>
-            </div>
             <Link
               href={"mailto:beautifulnails.if@gmail.com"}
               className="flex gap-6 text-white md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red"
@@ -70,9 +60,6 @@ const Hero = () => {
               </svg>
               <p>beautifulnails.if@gmail.com</p>
             </Link>
-          </div>
-          <div className="hidden lg:block bg-white bg-opacity-20 py-5 w-[400px] h-[260px] rounded-3xl lg:w-[450px]">
-            <OrderServise />
           </div>
         </div>
         <ul className="flex py-6 justify-center items-center w-[100%] gap-5 md:gap-7">

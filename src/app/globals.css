@@ -14,13 +14,13 @@ body {
 
 
 .bgImage {
-  background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero4.jpg');
+  background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero_new/1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (min-width: 1280px) {
-    background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero5.jpg');
+    background-image: linear-gradient(rgba(49, 50, 55, 0.5), rgba(39, 40, 45, 0.5)), url('/hero_new/2.png');
     /* background-image: linear-gradient(rgba(71, 73, 81, 0.6), rgba(71, 73, 81, 0.6)), url('/hero5.jpg'); */
   }
 }
