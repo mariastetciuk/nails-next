@@ -1,13 +1,11 @@
 "use client";
 import { navLinks } from "@/data/navList";
 import Link from "next/link";
-import { Dancing_Script, Zilla_Slab, Great_Vibes } from "next/font/google";
+import { Zilla_Slab } from "next/font/google";
 import BtnOpenMenu from "./btnComponents.tsx/BtnOpenMenu";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const dancing = Dancing_Script({ subsets: ["latin"], weight: ["700"] });
-const vibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 const zilla = Zilla_Slab({ subsets: ["latin"], weight: ["500"] });
 
 const Header = () => {
