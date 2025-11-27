@@ -49,9 +49,6 @@ const Price = () => {
               />
               <h2 className="md:text-lg font-medium mb-5 lg:mb-3 bg:text-2xl bg:mb-5">{title}</h2>
               <p className=" text-sm lg:text-base bg:text-lg">{description}</p>
-              {/* <p className="absolute left-1/2 -translate-x-1/2 bottom-4 border-2 border-red mx-auto bg-white w-[150px] py-2 rounded-2xl">
-                {price}
-              </p> */}
             </li>
           ))}
         </ul>

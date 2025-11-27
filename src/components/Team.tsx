@@ -12,10 +12,12 @@ const Team = () => {
       <div className="container py-8 md:py-10 lg:py-[60px] text-red ">
        <h2 className=" mb-4 text-4xl font-medium text-center md:text-5xl md:mb-6 lg:mb-14 lg:text-6xl">Про нас</h2>
        <div className="lg:flex lg:justify-between lg:gap-8">
-       <div className="border-b pb-5 mb-7 border-red border-opacity-50 border-t pt-5 lg:pt-[80px] lg:w-[600px] lg:text-lg">
-      <p className="mb-5"><span className="font-semibold pr-2 lg:text-lg">Beautiful Nails</span>- затишна б'юті зона в самому центрі Івано-Франківська. Індивідуальний підхід до кожного клієнта, професійна допомога в підборі домашнього догляду за руками та ногами, безпечне обслуговування, адже усі робочі інструменти проходять повний процес дезинфекції та стерилізації згідно з усіма санітарно-епідеміологічними вимогами МОЗ України.</p>
+       <div className="border-b pb-5 mb-7 border-red border-opacity-50 border-t pt-5 lg:w-[600px] lg:text-lg">
+      <p className="mb-5"><span className="font-semibold pr-2 lg:text-lg">Beautiful Nails</span> – простір, де манікюр стає мистецтвом, а догляд - задоволенням, де кожна деталь продумана для Вашого комфорту й бездоганного результату. Індивідуальний підхід до кожного клієнта, професійна допомога в підборі домашнього догляду за руками та ногами, безпечне обслуговування, адже усі робочі інструменти проходять повний процес дезінфекції та стерилізації згідно з усіма санітарно-епідеміологічними вимогами МОЗ України.
+
+</p>
      <BtnReadMore />
-       <p className=" font-semibold lg:text-lg">Манікюр не розкіш, а прояв любові до себе.</p>
+       <p className=" font-semibold lg:text-lg">Beautiful Nails – місце, де манікюр це більше, ніж послуга: це любов до деталей, стиль і турбота про себе.</p>
        </div>
        <motion.div
           viewport={{ once: true }}

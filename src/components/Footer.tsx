@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container text-white py-8 md:py-10 lg:py-12 flex flex-wrap gap-5 text-center md:flex-nowrap md:gap-[90px] lg:gap-[150px] md:text-left">
         <div className="w-[100%] sm:max-w-[350px] text-lg">
           <p
-            className={`${cinzel.className} text-3xl font-medium mb-3 md:text-4xl lg:mb-5`}
+            className={`${cinzel.className} text-3xl font-medium mb-3 md:text-4xl lg:mb-5 `}
           >
             Beautiful Nails
           </p>
@@ -24,20 +24,27 @@ const Footer = () => {
               Чекаємо Вас за адресою:
             </p>
             <Link
-              href="https://www.google.com/maps/place/Beautiful+Nails.+%D0%A1%D1%82%D1%83%D0%B4%D1%96%D1%8F+%D0%BC%D0%B0%D0%BD%D1%96%D0%BA%D1%8E%D1%80%D1%83+%D1%82%D0%B0+%D0%BF%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%D1%83/@48.9210646,24.7125106,17z/data=!4m14!1m7!3m6!1s0x4730c184b9d02d8b:0x545e662ae1fac0e6!2zQmVhdXRpZnVsIE5haWxzLiDQodGC0YPQtNGW0Y8g0LzQsNC90ZbQutGO0YDRgyDRgtCwINC_0LXQtNC40LrRjtGA0YM!8m2!3d48.9210646!4d24.7125106!16s%2Fg%2F11vf3qw1ry!3m5!1s0x4730c184b9d02d8b:0x545e662ae1fac0e6!8m2!3d48.9210646!4d24.7125106!16s%2Fg%2F11vf3qw1ry?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/Beautiful+Nails.+%D0%A1%D1%82%D1%83%D0%B4%D1%96%D1%8F+%D0%BC%D0%B0%D0%BD%D1%96%D0%BA%D1%8E%D1%80%D1%83+%D1%82%D0%B0+%D0%BF%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%D1%83/@48.9161174,24.7327395,17z/data=!3m1!4b1!4m6!3m5!1s0x4730c184b9d02d8b:0x545e662ae1fac0e6!8m2!3d48.9161174!4d24.7327395!16s%2Fg%2F11vf3qw1ry?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="block mb-4 md:mb-5 items-center text-white transition-all duration-300 hover:underline focus:underline"
             >
-              вул. Леся Курбаса 4/4,
+              вул. Незалежності 148 А,
               <span className="block">м. Івано-Франківськ</span>
             </Link>
           </div>
-          <p className="font-bold mb-3 text-center md:text-left lg:mb-4 lg:w-[300px] lg:text-lg">
+           <a
+              href={"tel: +380935893133"}
+              className="flex gap-6 md:gap-8 transition-all duration-300 hover:underline focus:underline"
+            >
+             
+              +38 (093) 5893133 
+            </a>
+          {/* <p className="font-bold mb-3 text-center md:text-left lg:mb-4 lg:w-[300px] lg:text-lg">
             Графік роботи:
           </p>
           <p className="mb-2">Вівторок - Неділя</p>
-          <p>10:30 - 20:00</p>
+          <p>10:30 - 20:00</p> */}
         </div>
         <div className="mx-auto">
           <h3 className=" font-bold mb-3 md:text-left md:text-lg lg:mb-4">
