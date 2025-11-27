@@ -21,7 +21,7 @@ const Hero = () => {
           cтудія манікюру та педикюру
         </h2>
         <div className="sm:px-60px md:flex md:justify-center sm:gap-[100px] lg:mb-5 lg:gap-10">
-          <div className="flex flex-wrap mx-auto  gap-3 max-w-[280px] sm:text-l md:max-w-[350px] md:text-xl md:gap-5 lg:m-0 lg:text-2xl lg:max-w-[370px]" >
+          <div className="flex flex-wrap mx-auto  gap-3 max-w-[265px] sm:text-l md:max-w-[330px] md:text-xl md:gap-5 lg:m-0 lg:text-2xl lg:max-w-[370px]" >
             <a
               href={"tel: +380935893133"}
               className="flex gap-6 md:gap-8 transition-all duration-300 hover:text-red hover:font-medium focus:text-red"
@@ -46,7 +46,7 @@ const Hero = () => {
               >
                 <use href="/sprite.svg#icon-location"></use>
               </svg>
-              вул. Незалежності 148 А, м. Івано-Франківськ, 
+              вул. Незалежності 148 А, м. Івано-Франківськ
             </Link>
             <Link
               href={"mailto:beautifulnails.if@gmail.com"}
