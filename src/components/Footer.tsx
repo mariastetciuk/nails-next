@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
            <a
               href={"tel: +380935893133"}
-              className="flex justify-center gap-6 md:gap-8 transition-all duration-300 hover:underline focus:underline"
+              className="flex justify-center md:justify-start gap-6 md:gap-8 transition-all duration-300 hover:underline focus:underline"
             >
              
               +38 (093) 5893133 

@@ -64,7 +64,7 @@ const BurgerMenu = ({ togleModal }: CloseModal) => {
         </ul>
        
         </div >
-            <a href={'tel: +380989505917'} className="block text-center text-2xl text-red py-8 font-semibold md:text-3xl md:py-5">+38 (098) 9505917</a>
+            <a href={'tel: +380935893133 '} className="block text-center text-2xl text-red py-8 font-semibold md:text-3xl md:py-5">+38 (093) 5893133 </a>
     
       </div>
       
