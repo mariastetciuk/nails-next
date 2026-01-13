@@ -47,7 +47,7 @@ const FixedBtn = () => {
         </a>
     
         <BtnOrderCall />
-<a href={'https://studiya-manikyuru-ta-pedikyuru-beautiful-nails.easyweek.com.ua/'} className="absolute left-1/2 -translate-x-1/2 inline-block text-center bg-white text-red py-1 text-lg rounded-3xl font-semibold px-3 border-4 border-red md:text-xl md:py-2 md:px-4 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white lg:hidden" rel="noopener noreferrer" target='_blank'>Записатися</a>
+<a href={'https://bookon.ua/s/YX5lIe2bTLArVDZ6cFLB'} className="absolute left-1/2 -translate-x-1/2 inline-block text-center bg-white text-red py-1 text-lg rounded-3xl font-semibold px-3 border-4 border-red md:text-xl md:py-2 md:px-4 transition-all duration-300 hover:bg-red hover:text-white focus:bg-red focus:text-white lg:hidden" rel="noopener noreferrer" target='_blank'>Записатися</a>
       
 
         <div className="relative ">
